@@ -9,4 +9,4 @@
 - [Mihai Vlad-George](https://github.com/mihaivladgeorge)
 
 ## Backlog
-We used Trello in order to manage and organise our tasks during the development of the application. This [link](https://trello.com/b/YeGheSeY/runnergameproject) redirects to our backlog.
+We used Trello in order to manage and organise our tasks during the game development. This [link](https://trello.com/b/YeGheSeY/runnergameproject) redirects to our backlog.

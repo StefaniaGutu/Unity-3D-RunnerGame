@@ -5,7 +5,7 @@
 - [Guțu Ștefania-Alexandra](https://github.com/StefaniaGutu) - Senior Coder
 - [Lăzăroiu Teodora-Bianca](https://github.com/TeodoraLazaroiu)
 - [Pirlogea Luciana-Elena](https://github.com/LucianaPirlogea) - Team leader
-- [Cherim Erol](https://github.com/erolcherim)
+- [Cherim Erol](https://github.com/erolcherim) 
 - [Mihai Vlad-George](https://github.com/mihaivladgeorge)
 
 ## Backlog

@@ -5,6 +5,7 @@ using System.Threading;
 
 public class PlayerController : MonoBehaviour
 {
+    public static float speed = 8f;
 
     // Update is called once per frame
     void Update()

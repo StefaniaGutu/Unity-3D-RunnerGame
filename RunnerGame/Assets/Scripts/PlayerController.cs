@@ -1,49 +1,77 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using System.Threading;
 using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
     public static float speed = 8f;
+
     private float prev_speed;
     private float addSpeed;
+
+    Vector3 moveVector = Vector3.zero;
+    CharacterController characterController;
+
+    public float jumpSpeed;
+    public float gravity;
+
     public int coinGet; // collected coins
     private int goalCoin; // no. of coins that will increase our speed
     private static int max_coin; // no. of max coins that we managed to collect
 
+    private float screenWidth;
+
     void Start()
     {
-        addSpeed = 0;
+        characterController = GetComponent<CharacterController>();
+
+        screenWidth = Screen.width;
+
+        addSpeed = 0f;
+
         coinGet = 0;
         goalCoin = 10;
     }
 
-    // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.A) && transform.position.x > -1.5f)
-            transform.position += Vector3.left * 0.25f;
+        //if (Input.GetKeyDown(KeyCode.A) && transform.position.x > -1.5f)
+        //{
+        //    transform.position += Vector3.left * 1f;
+        //}
+            
+        //if (Input.GetKeyDown(KeyCode.D) && transform.position.x < 1.5f)
+        //{
+        //    transform.position += Vector3.right * 1f;
+        //}
 
-        if (Input.GetKeyDown(KeyCode.D) && transform.position.x < 1.5f)
-            transform.position += Vector3.right * 0.25f;
+        moveVector.x = Input.GetAxis("Horizontal") * speed;
+        moveVector.z = Input.GetAxis("Vertical") * speed;
+
+        if (characterController.isGrounded && Input.GetKeyDown(KeyCode.W))
+        {
+            moveVector.y = jumpSpeed;
+        }
+
+        moveVector.y -= gravity * Time.deltaTime;
+
+        characterController.Move(moveVector * Time.deltaTime);
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.GetComponentInChildren<Transform>().tag == "ColorObstacle")
+        if (other.GetComponentInChildren<Transform>().tag == "Obstacle")
         {
             Destroy(other.gameObject);
+
             if (GetComponent<Renderer>().material.color != other.GetComponent<Renderer>().material.color)
             {
-                if (speed > 8) speed /= 1.5f;
                 prev_speed = speed;
                 StartCoroutine(gameEnd());
             }
         }
-
-        if (other.gameObject.tag == "Cointag")
+        if (other.gameObject.tag == "cointag")
         {
             coinGet += 2;
             if (max_coin < coinGet)
@@ -53,7 +81,7 @@ public class PlayerController : MonoBehaviour
 
             ObjectPools.Instance.ReturnToPool(other.GetComponent<CoinRotate>());
 
-            if(coinGet >= goalCoin)
+            if (coinGet >= goalCoin)
             {
                 goalCoin += (coinGet / 2);
                 addSpeed += 2f;
@@ -61,7 +89,6 @@ public class PlayerController : MonoBehaviour
             }
         }
     }
-
 
     IEnumerator gameEnd()
     {

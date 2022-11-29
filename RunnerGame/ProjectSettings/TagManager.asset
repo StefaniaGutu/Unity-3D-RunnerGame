@@ -5,9 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Obstacle
-  - SphereObstacle
-  - ColorObstacle
-  - Cointag
+  - cointag
   layers:
   - Default
   - TransparentFX

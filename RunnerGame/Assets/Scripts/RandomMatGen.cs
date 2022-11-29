@@ -9,6 +9,7 @@ public class RandomMatGen : MonoBehaviour
     void Start()
     {
         List<Color> color = new List<Color> { Color.magenta, Color.green, Color.blue, Color.yellow };
+
         if (transform.name.Equals("Player"))
         {
             Color randomColor = color[Random.Range(0, color.Count)];

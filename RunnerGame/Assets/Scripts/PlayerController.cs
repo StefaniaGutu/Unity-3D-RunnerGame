@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
-    public static float speed = 8f;
+    public static float speed = 10f;
 
     private float prev_speed;
     private float addSpeed;
@@ -46,7 +46,7 @@ public class PlayerController : MonoBehaviour
         //    transform.position += Vector3.right * 1f;
         //}
 
-        moveVector.x = Input.GetAxis("Horizontal") * 1f;
+        moveVector.x = Input.GetAxis("Horizontal") * 4f;
         moveVector.z = 0;
 
         if (characterController.isGrounded && (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow)))

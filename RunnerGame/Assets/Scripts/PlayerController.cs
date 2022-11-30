@@ -40,16 +40,16 @@ public class PlayerController : MonoBehaviour
         //{
         //    transform.position += Vector3.left * 1f;
         //}
-            
+
         //if (Input.GetKeyDown(KeyCode.D) && transform.position.x < 1.5f)
         //{
         //    transform.position += Vector3.right * 1f;
         //}
 
-        moveVector.x = Input.GetAxis("Horizontal") * speed;
-        moveVector.z = Input.GetAxis("Vertical") * speed;
+        moveVector.x = Input.GetAxis("Horizontal") * 1f;
+        moveVector.z = 0;
 
-        if (characterController.isGrounded && Input.GetKeyDown(KeyCode.W))
+        if (characterController.isGrounded && (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow)))
         {
             moveVector.y = jumpSpeed;
         }

@@ -5,7 +5,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638015830568367786
+      ticks: 638053508491960432
     m_Hash: 804845227
   m_LockFileStatus:
     m_FilePath: C:/Users/stefa/ProiectUnity/Unity-3D-RunnerGame/RunnerGame/Packages/packages-lock.json
@@ -13,7 +13,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638015830780851804
+      ticks: 638053508491970439
     m_Hash: 821292538
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}

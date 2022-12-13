@@ -59,8 +59,14 @@ public class PlayerController : MonoBehaviour
         characterController.Move(moveVector * Time.deltaTime);
     }
 
-    private void OnTriggerEnter(Collider other)
-    {
+    private void OnTriggerEnter(Collider other) {
+
+        if (other.tag == "JumpObstacle")
+        {
+            Destroy(other.gameObject);
+            prev_speed = speed;
+            StartCoroutine(gameEnd());
+        }
         if (other.GetComponentInChildren<Transform>().tag == "Obstacle")
         {
             Destroy(other.gameObject);

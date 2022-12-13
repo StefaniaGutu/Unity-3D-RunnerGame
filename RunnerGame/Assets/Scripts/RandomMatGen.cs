@@ -8,7 +8,7 @@ public class RandomMatGen : MonoBehaviour
 
     void Start()
     {
-        List<Color> color = new List<Color> { Color.magenta, Color.green, Color.blue, Color.yellow };
+        List<Color> color = new List<Color> { Color.magenta, Color.green, Color.blue, Color.yellow};
 
         if (transform.name.Equals("Player"))
         {
@@ -20,9 +20,9 @@ public class RandomMatGen : MonoBehaviour
         {
             foreach (GameObject item in other)
             {
-                Color randomColor = color[Random.Range(0, color.Count)];
-                item.GetComponent<Renderer>().material.color = randomColor;
-                color.Remove(randomColor);
+               Color randomColor = color[Random.Range(0, color.Count)];
+               item.GetComponent<Renderer>().material.color = randomColor;
+               color.Remove(randomColor);
             }
         }
     }

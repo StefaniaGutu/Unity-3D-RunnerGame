@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Obstacle
   - cointag
+  - JumpObstacle
   layers:
   - Default
   - TransparentFX

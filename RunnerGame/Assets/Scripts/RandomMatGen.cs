@@ -12,8 +12,9 @@ public class RandomMatGen : MonoBehaviour
 
         if (transform.name.Equals("Player"))
         {
+            var partOfBody = "Body";
             Color randomColor = color[Random.Range(0, color.Count)];
-            GetComponent<Renderer>().material.color = randomColor;
+            GameObject.Find(partOfBody).GetComponent<Renderer>().material.color = randomColor;
         }
 
         if (!transform.childCount.Equals(0))

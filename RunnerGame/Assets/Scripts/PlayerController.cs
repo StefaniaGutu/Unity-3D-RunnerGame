@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Security.Cryptography;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -26,6 +27,8 @@ public class PlayerController : MonoBehaviour
     {
         characterController = GetComponent<CharacterController>();
 
+        transform.position = new Vector3(0,-0.3f,0);
+
         screenWidth = Screen.width;
 
         addSpeed = 0f;
@@ -49,7 +52,7 @@ public class PlayerController : MonoBehaviour
         moveVector.x = Input.GetAxis("Horizontal") * 4f;
         moveVector.z = 0;
 
-        if (characterController.isGrounded && (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow)))
+        if (characterController.isGrounded && (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.Space)))
         {
             moveVector.y = jumpSpeed;
         }
@@ -71,7 +74,7 @@ public class PlayerController : MonoBehaviour
         {
             Destroy(other.gameObject);
 
-            if (GetComponent<Renderer>().material.color != other.GetComponent<Renderer>().material.color)
+            if (GameObject.Find("Body").GetComponent<Renderer>().material.color != other.GetComponent<Renderer>().material.color)
             {
                 prev_speed = speed;
                 StartCoroutine(gameEnd());

@@ -5,6 +5,7 @@ using UnityEngine;
 public class Spawning : MonoBehaviour
 {
     public GameObject obstacle;
+    public GameObject jumpObstacle;
     private bool spawning = true;
 
     private void Start()
@@ -16,16 +17,33 @@ public class Spawning : MonoBehaviour
     {
         while (true)
         {
-            if (spawning)
+            if (Random.Range(0, 2) == 0)
             {
-                var obs = ObjectPools.Instance.Get();
-                obs.transform.position = obstacle.GetComponentInChildren<Transform>().GetChild(Random.Range(0, 4)).position;
-                obs.transform.rotation = transform.rotation;
-                obs.gameObject.SetActive(true);
+                if (spawning)
+                {
+                    var obs = ObjectPools.Instance.Get();
+                    obs.transform.position = obstacle.GetComponentInChildren<Transform>().GetChild(Random.Range(0, 4)).position;
+                    obs.transform.rotation = transform.rotation;
+                    obs.gameObject.SetActive(true);
+                }
+                else
+                {
+                    Instantiate(obstacle);
+                }
             }
-            else 
-            { 
-                Instantiate(obstacle); 
+            else
+            {
+                if (spawning)
+                {
+                    var obs = ObjectPools.Instance.Get();
+                    obs.transform.position = jumpObstacle.transform.position;
+                    obs.transform.rotation = transform.rotation;
+                    obs.gameObject.SetActive(true);
+                }
+                else
+                {
+                    Instantiate(jumpObstacle);
+                }
             }
 
             spawning = !spawning;

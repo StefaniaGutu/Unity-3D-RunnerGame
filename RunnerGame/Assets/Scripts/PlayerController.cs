@@ -72,6 +72,8 @@ public class PlayerController : MonoBehaviour
         }
         if (other.GetComponentInChildren<Transform>().tag == "Obstacle")
         {
+            ScoreManager.instance.AddPoints(2);
+            
             Destroy(other.gameObject);
 
             if (GameObject.Find("Body").GetComponent<Renderer>().material.color != other.GetComponent<Renderer>().material.color)
@@ -82,6 +84,8 @@ public class PlayerController : MonoBehaviour
         }
         if (other.gameObject.tag == "cointag")
         {
+            ScoreManager.instance.AddPoints(1);
+
             coinGet += 2;
             if (max_coin < coinGet)
             {

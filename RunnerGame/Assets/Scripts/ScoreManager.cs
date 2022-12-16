@@ -35,8 +35,8 @@ public class ScoreManager : MonoBehaviour
         if (bestScore < score)
         {
             bestScore = score;
-            bestScoreText.text = "Score: " + score.ToString();
-            PlayerPrefs.SetInt("highscore", score);
+            bestScoreText.text = "Best Score: " + bestScore.ToString();
+            PlayerPrefs.SetInt("highscore", bestScore);
         }
     }
 }

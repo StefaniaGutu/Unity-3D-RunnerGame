@@ -23,6 +23,8 @@ public class PlayerController : MonoBehaviour
 
     private float screenWidth;
 
+    [SerializeField] GameOverManager gameOverManager;
+
     void Start()
     {
         characterController = GetComponent<CharacterController>();
@@ -105,6 +107,7 @@ public class PlayerController : MonoBehaviour
 
     IEnumerator gameEnd()
     {
+        gameOverManager.SetGameOver();
         speed = 0;
         yield return new WaitForSeconds(3);
         speed = prev_speed;

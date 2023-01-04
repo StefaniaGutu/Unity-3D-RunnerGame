@@ -345,6 +345,7 @@
 "Assets/Scripts/RandomMatGen.cs"
 "Assets/Scripts/ScoreManager.cs"
 "Assets/Scripts/Spawning.cs"
+"Assets/Scripts/StartMenu.cs"
 -langversion:9.0
 
 /deterministic

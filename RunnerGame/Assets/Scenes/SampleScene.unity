@@ -1397,9 +1397,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 312829855}
-        m_TargetAssemblyTypeName: GameOverManager, Assembly-CSharp
-        m_MethodName: RestartGame
+      - m_Target: {fileID: 1264781505}
+        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
+        m_MethodName: setSpeedRestart
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

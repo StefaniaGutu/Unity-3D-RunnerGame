@@ -15,10 +15,4 @@ public class GameOverManager : MonoBehaviour
     {
         gameOverScreen.SetActive(true);
     }
-
-    public void RestartGame()
-    {
-        //playerController.setSpeedEnd();
-        SceneManager.LoadScene(1);
-    }
 }

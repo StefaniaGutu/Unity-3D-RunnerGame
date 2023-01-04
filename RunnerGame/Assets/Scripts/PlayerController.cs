@@ -108,17 +108,16 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    public void setSpeedEnd()
+    public void setSpeedRestart()
     {
         speed = prev_speed;
+        SceneManager.LoadScene(1);
     }
 
     IEnumerator gameEnd()
     {
         gameOverManager.SetGameOver();
         speed = 0;
-//       yield return new WaitForSeconds(3);
-//       speed = prev_speed;
         yield return new WaitForSeconds(0.05f);
     }
 }

@@ -8,7 +8,7 @@ public class PlayerController : MonoBehaviour
 {
     public static float speed = 10f;
 
-    private float prev_speed;
+    public float prev_speed;
     private float addSpeed;
 
     Vector3 moveVector = Vector3.zero;
@@ -27,6 +27,7 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
+
         characterController = GetComponent<CharacterController>();
 
         transform.position = new Vector3(0,-0.3f,0);
@@ -37,6 +38,8 @@ public class PlayerController : MonoBehaviour
 
         coinGet = 0;
         goalCoin = 10;
+
+
     }
 
     void Update()
@@ -105,13 +108,16 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    public void setSpeedRestart()
+    {
+        speed = prev_speed;
+        SceneManager.LoadScene(1);
+    }
+
     IEnumerator gameEnd()
     {
         gameOverManager.SetGameOver();
         speed = 0;
-        yield return new WaitForSeconds(3);
-        speed = prev_speed;
         yield return new WaitForSeconds(0.05f);
-        SceneManager.LoadScene("SampleScene");
     }
 }

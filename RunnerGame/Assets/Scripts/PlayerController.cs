@@ -49,16 +49,6 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        //if (Input.GetKeyDown(KeyCode.A) && transform.position.x > -1.5f)
-        //{
-        //    transform.position += Vector3.left * 1f;
-        //}
-
-        //if (Input.GetKeyDown(KeyCode.D) && transform.position.x < 1.5f)
-        //{
-        //    transform.position += Vector3.right * 1f;
-        //}
-
         moveVector.x = Input.GetAxis("Horizontal") * 4f;
         moveVector.z = 0;
 

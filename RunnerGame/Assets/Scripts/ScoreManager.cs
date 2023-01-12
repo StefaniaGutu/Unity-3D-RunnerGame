@@ -19,7 +19,6 @@ public class ScoreManager : MonoBehaviour
         instance = this;
     }
     
-    // Start is called before the first frame update
     void Start()
     {
         bestScore = PlayerPrefs.GetInt("highscore", 0);

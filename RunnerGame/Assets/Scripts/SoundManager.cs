@@ -11,7 +11,6 @@ public class SoundManager : MonoBehaviour
     [SerializeField] Image SoundOffIcon;
     private bool muted = false;
 
-    // Start is called before the first frame update
     void Start()
     {
         UpdateButtonIcon();

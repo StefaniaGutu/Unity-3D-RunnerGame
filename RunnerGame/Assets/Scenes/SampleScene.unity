@@ -316,7 +316,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a4d32ba86a4cd140a41ca68e71f5a30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obstacle: {fileID: 2214765301749551600, guid: 76fab4b7113f29a448531aca6aa143d3, type: 3}
+  obstacle: {fileID: 6736100697517882944, guid: ed357e09ae0ab464c9e212d774266b3c, type: 3}
   jumpObstacle: {fileID: 3615037870895920591, guid: 9ce922c596776174c8def8d3ae5760e3, type: 3}
 --- !u!1 &312829849
 GameObject:

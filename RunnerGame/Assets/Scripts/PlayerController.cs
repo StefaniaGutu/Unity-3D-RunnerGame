@@ -4,6 +4,7 @@ using System.Security.Cryptography;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+[RequireComponent(typeof(AudioSource))]
 public class PlayerController : MonoBehaviour
 {
     public static float speed = 10f;
@@ -25,6 +26,10 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] GameOverManager gameOverManager;
 
+    AudioSource[] audioData;
+    public AudioClip CoinSound;
+    public AudioClip DiamondSound;
+
     void Start()
     {
 
@@ -39,7 +44,7 @@ public class PlayerController : MonoBehaviour
         coinGet = 0;
         goalCoin = 10;
 
-
+        audioData = GetComponents<AudioSource>();
     }
 
     void Update()
@@ -74,21 +79,29 @@ public class PlayerController : MonoBehaviour
             Destroy(other.gameObject);
             prev_speed = speed;
             StartCoroutine(gameEnd());
+            audioData[2].Play(0);
         }
         if (other.GetComponentInChildren<Transform>().tag == "Obstacle")
         {
-            ScoreManager.instance.AddPoints(2);
-            
             Destroy(other.gameObject);
 
+            if (GameObject.Find("Body").GetComponent<Renderer>().material.color == other.GetComponent<Renderer>().material.color)
+            {
+                audioData[1].Play(0);
+                ScoreManager.instance.AddPoints(2);
+            }
+                
             if (GameObject.Find("Body").GetComponent<Renderer>().material.color != other.GetComponent<Renderer>().material.color)
             {
                 prev_speed = speed;
                 StartCoroutine(gameEnd());
+                audioData[2].Play(0);
             }
         }
         if (other.gameObject.tag == "cointag")
         {
+            audioData[0].Play(0);
+
             ScoreManager.instance.AddPoints(1);
 
             coinGet += 2;

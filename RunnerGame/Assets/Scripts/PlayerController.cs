@@ -7,12 +7,15 @@ using UnityEngine.SceneManagement;
 [RequireComponent(typeof(AudioSource))]
 public class PlayerController : MonoBehaviour
 {
+    public bool canMove = true;
+    Rigidbody m_Rigidbody;
     public static float speed = 10f;
 
     public float prev_speed;
     private float addSpeed;
 
     Vector3 moveVector = Vector3.zero;
+    Vector3 holdPosition = Vector3.zero;
     CharacterController characterController;
 
     public float jumpSpeed;
@@ -32,6 +35,7 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
+        m_Rigidbody = GetComponent<Rigidbody>();
 
         characterController = GetComponent<CharacterController>();
 
@@ -49,17 +53,20 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        moveVector.x = Input.GetAxis("Horizontal") * 4f;
-        moveVector.z = 0;
-
-        if (characterController.isGrounded && (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.Space)))
+        if (canMove)
         {
-            moveVector.y = jumpSpeed;
+            moveVector.x = Input.GetAxis("Horizontal") * 4f;
+            moveVector.z = 0;
+
+            if (characterController.isGrounded && (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.Space)))
+            {
+                moveVector.y = jumpSpeed;
+            }
+
+            moveVector.y -= gravity * Time.deltaTime;
+
+            characterController.Move(moveVector * Time.deltaTime);
         }
-
-        moveVector.y -= gravity * Time.deltaTime;
-
-        characterController.Move(moveVector * Time.deltaTime);
     }
 
     private void OnTriggerEnter(Collider other) {
@@ -84,6 +91,7 @@ public class PlayerController : MonoBehaviour
             if (GameObject.Find("Body").GetComponent<Renderer>().material.color != other.GetComponent<Renderer>().material.color)
             {
                 prev_speed = speed;
+                holdPosition = characterController.transform.position;
                 StartCoroutine(gameEnd());
                 audioData[2].Play(0);
             }
@@ -113,7 +121,9 @@ public class PlayerController : MonoBehaviour
 
     public void setSpeedRestart()
     {
-        speed = prev_speed;
+        canMove = true;
+        speed = 10f;
+        m_Rigidbody.constraints = RigidbodyConstraints.None;
         SceneManager.LoadScene(1);
     }
 
@@ -121,6 +131,8 @@ public class PlayerController : MonoBehaviour
     {
         gameOverManager.SetGameOver();
         speed = 0;
+        canMove = false;
+        m_Rigidbody.constraints = RigidbodyConstraints.FreezeAll;
         yield return new WaitForSeconds(0.05f);
     }
 }

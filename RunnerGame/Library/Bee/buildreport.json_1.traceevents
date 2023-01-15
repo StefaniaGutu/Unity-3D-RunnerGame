@@ -1,0 +1,562 @@
+{ "pid": 0, "tid": -1, "ph": "M", "name": "process_name", "args": { "name": "BeeDriver" } },
+{ "pid": 0, "tid": -1, "ph": "M", "name": "process_sort_index", "args": { "sort_index": "-2" } },
+{ "pid": 0, "tid": 1, "ph": "M", "name": "thread_name", "args": { "name": "" } },
+{ "pid": 0, "tid": 1, "ts": 1673772844834083, "dur": 2322033, "ph": "X", "name": "Build Player", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1673772844834324, "dur": 10384, "ph": "X", "name": "WriteBuildProgramData", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1673772844844711, "dur": 31811, "ph": "X", "name": "Run Backend", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1673772844876524, "dur": 1108400, "ph": "X", "name": "BuildProgram", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1673772845984926, "dur": 1154282, "ph": "X", "name": "Run Backend", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1673772847139212, "dur": 16903, "ph": "X", "name": "Finish", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1673772847157085, "dur": 20, "ph": "X", "name": "", "args": {} },
+{ "pid": 35942, "tid": -1, "ph": "M", "name": "process_name", "args": { "name": "netcorerun.dll" } },
+{ "pid": 35942, "tid": -1, "ph": "M", "name": "process_sort_index", "args": { "sort_index": "-1" } },
+{ "pid": 35942, "tid": 1, "ph": "M", "name": "thread_name", "args": { "name": "" } },
+{ "pid": 35942, "tid": 1, "ts": 1673772845634942, "dur": 335597, "ph": "X", "name": "BuildProgram", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1673772845636222, "dur": 89888, "ph": "X", "name": "BuildProgramContextConstructor", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1673772845948163, "dur": 9749, "ph": "X", "name": "OutputData.Write", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1673772845957919, "dur": 12575, "ph": "X", "name": "Backend.Write", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1673772845958814, "dur": 10525, "ph": "X", "name": "JsonToString", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1673772845976348, "dur": 1168, "ph": "X", "name": "", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1673772845975472, "dur": 2084, "ph": "X", "name": "Write chrome-trace events", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1673772847157265, "dur": 291, "ph": "X", "name": "buildprogram0.traceevents", "args": {} },
+{ "cat":"", "pid":12345, "tid":0, "ts":0, "ph":"M", "name":"process_name", "args": { "name":"bee_backend" } }
+,{ "pid":12345, "tid":0, "ts":1673772846026854, "dur":1503, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1673772846028367, "dur":42, "ph":"X", "name": "Tundra",  "args": { "detail":"RemoveStaleOutputs" }}
+,{ "pid":12345, "tid":0, "ts":1673772846028419, "dur":12, "ph":"X", "name": "Tundra",  "args": { "detail":"PrepareNodes" }}
+,{ "pid":12345, "tid":0, "ts":1673772846028431, "dur":722, "ph":"X", "name": "Tundra",  "args": { "detail":"BuildQueueInit" }}
+,{ "pid":12345, "tid":0, "ts":1673772846029186, "dur":556, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1673772846029742, "dur":1, "ph":"X", "name": "SortWorkingStack",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1673772847113334, "dur":652, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1673772847113986, "dur":23, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1673772847114010, "dur":5, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1673772847114015, "dur":13, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1673772847114028, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1673772847114030, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1673772847114036, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1673772847114038, "dur":7, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1673772847114045, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1673772847114047, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1673772847114053, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1673772847114055, "dur":16, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1673772847114071, "dur":4, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1673772847114075, "dur":10, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1673772847114085, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1673772847114086, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1673772847114092, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1673772847114094, "dur":7, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1673772847114101, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1673772847114102, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1673772847114108, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1673772847114110, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1673772847114116, "dur":3, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1673772847114119, "dur":5, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1673772847114124, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1673772847114126, "dur":13, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1673772847114139, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1673772847114141, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1673772847114147, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1673772847114149, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1673772847114155, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1673772847114157, "dur":5, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1673772847114162, "dur":0, "ph":"X", "name": "SharedResourceDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1673772847114216, "dur":5, "ph":"X", "name": "BuildQueueDestroyTail",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1673772847114230, "dur":2292, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
+,{ "pid":12345, "tid":1, "ts":1673772846029363, "dur":394, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1673772846029757, "dur":2579, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1673772846032336, "dur":16556, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":1, "ts":1673772846048898, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1673772846048909, "dur":3529, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":1, "ts":1673772846052462, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":1, "ts":1673772846052517, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1673772846052531, "dur":454783, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":1, "ts":1673772846507344, "dur":82031, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/Unity.Services.Core.Scheduler.dll" }}
+,{ "pid":12345, "tid":1, "ts":1673772846589387, "dur":5, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1673772846589408, "dur":11103, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/Unity.Services.Core.Scheduler.dll" }}
+,{ "pid":12345, "tid":1, "ts":1673772846600566, "dur":198422, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/System.Security.dll" }}
+,{ "pid":12345, "tid":1, "ts":1673772846798997, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1673772846799010, "dur":1880, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/System.Security.dll" }}
+,{ "pid":12345, "tid":1, "ts":1673772846800934, "dur":162, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/StreamingAssets/UnityServicesProjectConfiguration.json" }}
+,{ "pid":12345, "tid":1, "ts":1673772846801099, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1673772846801775, "dur":1308, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/StreamingAssets/UnityServicesProjectConfiguration.json" }}
+,{ "pid":12345, "tid":1, "ts":1673772846803122, "dur":41, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":1, "ts":1673772846803217, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1673772846803268, "dur":2088, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":1, "ts":1673772846805396, "dur":37, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/sharedassets1.resource" }}
+,{ "pid":12345, "tid":1, "ts":1673772846805436, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1673772846805445, "dur":10673, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/sharedassets1.resource" }}
+,{ "pid":12345, "tid":1, "ts":1673772846816161, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/sharedassets1.assets" }}
+,{ "pid":12345, "tid":1, "ts":1673772846816209, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1673772846816216, "dur":1985, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/sharedassets1.assets" }}
+,{ "pid":12345, "tid":1, "ts":1673772846818244, "dur":37, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/sharedassets0.assets.resS" }}
+,{ "pid":12345, "tid":1, "ts":1673772846818284, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1673772846818295, "dur":8181, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/sharedassets0.assets.resS" }}
+,{ "pid":12345, "tid":1, "ts":1673772846826529, "dur":16153, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":1, "ts":1673772846842693, "dur":4, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1673772846842708, "dur":1622, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":1, "ts":1673772846844370, "dur":269219, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1673772846029375, "dur":388, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1673772846029763, "dur":2580, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1673772846032344, "dur":410, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":2, "ts":1673772846032761, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1673772846048454, "dur":137294, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":2, "ts":1673772846185773, "dur":67122, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/UnityMaster_Lesson1-3.exe" }}
+,{ "pid":12345, "tid":2, "ts":1673772846252899, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1673772846252905, "dur":15171, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/UnityMaster_Lesson1-3.exe" }}
+,{ "pid":12345, "tid":2, "ts":1673772846268114, "dur":450017, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.UIElementsModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1673772846718142, "dur":4, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1673772846718158, "dur":5594, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.UIElementsModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1673772846723807, "dur":140019, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/System.ComponentModel.Composition.dll" }}
+,{ "pid":12345, "tid":2, "ts":1673772846863835, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1673772846863847, "dur":1643, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/System.ComponentModel.Composition.dll" }}
+,{ "pid":12345, "tid":2, "ts":1673772846865536, "dur":247883, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1673772846029437, "dur":334, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1673772846029771, "dur":2559, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1673772846032331, "dur":153, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":3, "ts":1673772846032490, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1673772846043608, "dur":389777, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":3, "ts":1673772846433413, "dur":23720, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1673772846457146, "dur":5, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1673772846457164, "dur":2265, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1673772846459470, "dur":41056, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1673772846500534, "dur":6, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1673772846500551, "dur":1355, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1673772846501951, "dur":98081, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/Unity.Services.Core.Telemetry.dll" }}
+,{ "pid":12345, "tid":3, "ts":1673772846600038, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1673772846600048, "dur":10997, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/Unity.Services.Core.Telemetry.dll" }}
+,{ "pid":12345, "tid":3, "ts":1673772846611093, "dur":123411, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/System.Numerics.dll" }}
+,{ "pid":12345, "tid":3, "ts":1673772846734514, "dur":4, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1673772846734529, "dur":2106, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/System.Numerics.dll" }}
+,{ "pid":12345, "tid":3, "ts":1673772846736691, "dur":179402, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/Newtonsoft.Json.dll" }}
+,{ "pid":12345, "tid":3, "ts":1673772846916101, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1673772846916114, "dur":1637, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/Newtonsoft.Json.dll" }}
+,{ "pid":12345, "tid":3, "ts":1673772846917781, "dur":195662, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1673772846029643, "dur":150, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1673772846029794, "dur":2511, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1673772846032309, "dur":154, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":4, "ts":1673772846032470, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1673772846039735, "dur":152051, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":4, "ts":1673772846191843, "dur":57293, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.VFXModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1673772846249154, "dur":9, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1673772846249183, "dur":2576, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.VFXModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1673772846251805, "dur":109642, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.UNETModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1673772846361455, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1673772846361533, "dur":3629, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.UNETModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1673772846365220, "dur":55440, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.PhysicsModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1673772846420671, "dur":5, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1673772846420687, "dur":2364, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.PhysicsModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1673772846423109, "dur":30231, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.HotReloadModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1673772846453385, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1673772846453398, "dur":5777, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.HotReloadModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1673772846459229, "dur":93197, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.AudioModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1673772846552433, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1673772846552445, "dur":5701, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.AudioModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1673772846558191, "dur":2927, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/Unity.Services.Core.Device.dll" }}
+,{ "pid":12345, "tid":4, "ts":1673772846561166, "dur":5, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1673772846561182, "dur":3001, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/Unity.Services.Core.Device.dll" }}
+,{ "pid":12345, "tid":4, "ts":1673772846564247, "dur":90558, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/Unity.Services.Core.Configuration.dll" }}
+,{ "pid":12345, "tid":4, "ts":1673772846654814, "dur":6, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1673772846654831, "dur":4303, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/Unity.Services.Core.Configuration.dll" }}
+,{ "pid":12345, "tid":4, "ts":1673772846659183, "dur":44359, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":4, "ts":1673772846703551, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1673772846703562, "dur":5258, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":4, "ts":1673772846708862, "dur":69721, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/System.Data.DataSetExtensions.dll" }}
+,{ "pid":12345, "tid":4, "ts":1673772846778592, "dur":4, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1673772846778608, "dur":3077, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/System.Data.DataSetExtensions.dll" }}
+,{ "pid":12345, "tid":4, "ts":1673772846781731, "dur":199238, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/Mono.Security.dll" }}
+,{ "pid":12345, "tid":4, "ts":1673772846980976, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1673772846980988, "dur":1733, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/Mono.Security.dll" }}
+,{ "pid":12345, "tid":4, "ts":1673772846982785, "dur":130579, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1673772846029431, "dur":335, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1673772846029766, "dur":2565, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1673772846032331, "dur":175, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":5, "ts":1673772846032510, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1673772846047634, "dur":138551, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":5, "ts":1673772846186212, "dur":27511, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.WindModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1673772846213732, "dur":4, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1673772846214085, "dur":1350, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.WindModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1673772846215473, "dur":131465, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1673772846346985, "dur":5, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1673772846346999, "dur":1410, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1673772846348462, "dur":48726, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1673772846397240, "dur":4, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1673772846397256, "dur":1705, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1673772846399009, "dur":200817, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.IMGUIModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1673772846599835, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1673772846599847, "dur":1955, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.IMGUIModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1673772846601844, "dur":208688, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/System.Runtime.Serialization.dll" }}
+,{ "pid":12345, "tid":5, "ts":1673772846810540, "dur":6, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1673772846810557, "dur":5215, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/System.Runtime.Serialization.dll" }}
+,{ "pid":12345, "tid":5, "ts":1673772846815841, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/sharedassets1.assets.resS" }}
+,{ "pid":12345, "tid":5, "ts":1673772846815897, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1673772846815911, "dur":4117, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/sharedassets1.assets.resS" }}
+,{ "pid":12345, "tid":5, "ts":1673772846820070, "dur":38, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":5, "ts":1673772846820110, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1673772846820121, "dur":4880, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":5, "ts":1673772846825046, "dur":155, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":5, "ts":1673772846825204, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1673772846825217, "dur":4762, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":5, "ts":1673772846830032, "dur":42, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/resources.assets.resS" }}
+,{ "pid":12345, "tid":5, "ts":1673772846830077, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1673772846830087, "dur":1878, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/resources.assets.resS" }}
+,{ "pid":12345, "tid":5, "ts":1673772846832005, "dur":67, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/level1.resS" }}
+,{ "pid":12345, "tid":5, "ts":1673772846832076, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1673772846832085, "dur":1858, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/level1.resS" }}
+,{ "pid":12345, "tid":5, "ts":1673772846833998, "dur":38, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/level0.resS" }}
+,{ "pid":12345, "tid":5, "ts":1673772846834039, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1673772846834046, "dur":2740, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/level0.resS" }}
+,{ "pid":12345, "tid":5, "ts":1673772846836840, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":5, "ts":1673772846836889, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1673772846836901, "dur":2774, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":5, "ts":1673772846839713, "dur":273626, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1673772846029473, "dur":302, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1673772846029776, "dur":2548, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1673772846032325, "dur":194, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":6, "ts":1673772846032522, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1673772846049443, "dur":157541, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":6, "ts":1673772846207012, "dur":42717, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1673772846249733, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1673772846249746, "dur":2852, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1673772846252649, "dur":43080, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.UIModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1673772846295743, "dur":6, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1673772846295761, "dur":21833, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.UIModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1673772846317730, "dur":62138, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1673772846379881, "dur":7, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1673772846379900, "dur":12121, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1673772846392090, "dur":34890, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.InputModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1673772846426991, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1673772846427005, "dur":1598, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.InputModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1673772846428645, "dur":86123, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.GameCenterModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1673772846514776, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1673772846514790, "dur":1604, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.GameCenterModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1673772846516446, "dur":65406, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/Unity.Services.Core.Environments.Internal.dll" }}
+,{ "pid":12345, "tid":6, "ts":1673772846581862, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1673772846581876, "dur":2199, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/Unity.Services.Core.Environments.Internal.dll" }}
+,{ "pid":12345, "tid":6, "ts":1673772846584134, "dur":119903, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/System.Transactions.dll" }}
+,{ "pid":12345, "tid":6, "ts":1673772846704049, "dur":5, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1673772846704064, "dur":3130, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/System.Transactions.dll" }}
+,{ "pid":12345, "tid":6, "ts":1673772846707247, "dur":228905, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/System.Data.dll" }}
+,{ "pid":12345, "tid":6, "ts":1673772846936158, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1673772846936166, "dur":2789, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/System.Data.dll" }}
+,{ "pid":12345, "tid":6, "ts":1673772846938997, "dur":174512, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1673772846029504, "dur":277, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1673772846029781, "dur":2541, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1673772846032322, "dur":17629, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":7, "ts":1673772846049962, "dur":4, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1673772846049978, "dur":8765, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":7, "ts":1673772846058767, "dur":128146, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":7, "ts":1673772846186920, "dur":5, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1673772846186931, "dur":3776, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":7, "ts":1673772846190744, "dur":48998, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.VideoModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1673772846239751, "dur":4, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1673772846239764, "dur":2155, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.VideoModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1673772846241964, "dur":78628, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1673772846320601, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1673772846320613, "dur":3476, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1673772846324132, "dur":43830, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.SubstanceModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1673772846367980, "dur":7, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1673772846368009, "dur":1980, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.SubstanceModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1673772846370036, "dur":142525, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1673772846512608, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1673772846512617, "dur":1497, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1673772846514153, "dur":134909, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/Unity.Services.Core.Internal.dll" }}
+,{ "pid":12345, "tid":7, "ts":1673772846649066, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1673772846649073, "dur":40815, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/Unity.Services.Core.Internal.dll" }}
+,{ "pid":12345, "tid":7, "ts":1673772846689932, "dur":315638, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/System.dll" }}
+,{ "pid":12345, "tid":7, "ts":1673772847005576, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1673772847005587, "dur":3389, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/System.dll" }}
+,{ "pid":12345, "tid":7, "ts":1673772847009015, "dur":104341, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1673772846029571, "dur":214, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1673772846029785, "dur":2516, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1673772846032307, "dur":31980, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":8, "ts":1673772846064296, "dur":5, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1673772846064313, "dur":122646, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":8, "ts":1673772846186982, "dur":47522, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.VRModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1673772846234510, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1673772846234521, "dur":3570, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.VRModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1673772846238135, "dur":25770, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1673772846263917, "dur":5, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1673772846263932, "dur":4073, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1673772846268085, "dur":61274, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1673772846329372, "dur":4, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1673772846329389, "dur":1467, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1673772846330897, "dur":31931, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1673772846362834, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1673772846362843, "dur":2622, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1673772846365514, "dur":60325, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.Physics2DModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1673772846425855, "dur":4, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1673772846425871, "dur":2260, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.Physics2DModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1673772846428204, "dur":32279, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.GIModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1673772846460492, "dur":4, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1673772846460508, "dur":2200, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.GIModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1673772846462746, "dur":30110, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.ARModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1673772846492866, "dur":4, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1673772846492880, "dur":1518, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.ARModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1673772846494440, "dur":253237, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":8, "ts":1673772846747685, "dur":396, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1673772846748096, "dur":1718, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":8, "ts":1673772846749873, "dur":79173, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/netstandard.dll" }}
+,{ "pid":12345, "tid":8, "ts":1673772846829056, "dur":4, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1673772846829071, "dur":2445, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/netstandard.dll" }}
+,{ "pid":12345, "tid":8, "ts":1673772846831560, "dur":35, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/resources.assets" }}
+,{ "pid":12345, "tid":8, "ts":1673772846831598, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1673772846831608, "dur":2276, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/resources.assets" }}
+,{ "pid":12345, "tid":8, "ts":1673772846833963, "dur":48, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/level1" }}
+,{ "pid":12345, "tid":8, "ts":1673772846834015, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1673772846834024, "dur":2812, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/level1" }}
+,{ "pid":12345, "tid":8, "ts":1673772846836905, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":8, "ts":1673772846836947, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1673772846836954, "dur":2848, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":8, "ts":1673772846839835, "dur":273793, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1673772846029645, "dur":152, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1673772846029798, "dur":2501, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1673772846032308, "dur":48657, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":9, "ts":1673772846080976, "dur":5, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1673772846082585, "dur":121182, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":9, "ts":1673772846203788, "dur":91289, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1673772846295087, "dur":4, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1673772846295104, "dur":4690, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1673772846299843, "dur":61104, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1673772846360953, "dur":4, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1673772846360966, "dur":1342, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1673772846362359, "dur":27506, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.ProfilerModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1673772846389880, "dur":9, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1673772846389902, "dur":3101, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.ProfilerModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1673772846393054, "dur":40040, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1673772846433102, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1673772846433113, "dur":1714, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1673772846434867, "dur":60747, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1673772846495624, "dur":4, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1673772846495641, "dur":3587, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1673772846499293, "dur":69866, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/Unity.Services.Core.Threading.dll" }}
+,{ "pid":12345, "tid":9, "ts":1673772846569171, "dur":4, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1673772846569187, "dur":19482, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/Unity.Services.Core.Threading.dll" }}
+,{ "pid":12345, "tid":9, "ts":1673772846588733, "dur":193629, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/System.ServiceModel.Internals.dll" }}
+,{ "pid":12345, "tid":9, "ts":1673772846782369, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1673772846782381, "dur":2843, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/System.ServiceModel.Internals.dll" }}
+,{ "pid":12345, "tid":9, "ts":1673772846785277, "dur":54653, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":9, "ts":1673772846839934, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1673772846839945, "dur":3631, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":9, "ts":1673772846843630, "dur":269982, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1673772846029607, "dur":182, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1673772846029789, "dur":2539, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1673772846032328, "dur":13482, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":10, "ts":1673772846045818, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1673772846048679, "dur":9703, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":10, "ts":1673772846058404, "dur":194239, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/UnityPlayer.dll" }}
+,{ "pid":12345, "tid":10, "ts":1673772846252649, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1673772846252658, "dur":52528, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/UnityPlayer.dll" }}
+,{ "pid":12345, "tid":10, "ts":1673772846305217, "dur":24625, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1673772846329851, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1673772846329864, "dur":1090, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1673772846330992, "dur":26668, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1673772846357673, "dur":17, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1673772846357707, "dur":2612, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1673772846360380, "dur":25119, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1673772846385509, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1673772846385523, "dur":3192, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1673772846388919, "dur":41269, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1673772846430196, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1673772846430208, "dur":4169, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1673772846434430, "dur":41595, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1673772846476034, "dur":4, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1673772846476049, "dur":1457, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1673772846477549, "dur":30435, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1673772846507995, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1673772846508009, "dur":1549, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1673772846509613, "dur":41454, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/Unity.Services.Core.Registration.dll" }}
+,{ "pid":12345, "tid":10, "ts":1673772846551078, "dur":5, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1673772846551092, "dur":18878, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/Unity.Services.Core.Registration.dll" }}
+,{ "pid":12345, "tid":10, "ts":1673772846570023, "dur":140422, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":10, "ts":1673772846710455, "dur":4, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1673772846710469, "dur":2307, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":10, "ts":1673772846712825, "dur":184830, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/System.Core.dll" }}
+,{ "pid":12345, "tid":10, "ts":1673772846897662, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1673772846897672, "dur":2111, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/System.Core.dll" }}
+,{ "pid":12345, "tid":10, "ts":1673772846899812, "dur":213747, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1673772846029671, "dur":131, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1673772846029802, "dur":2507, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1673772846032310, "dur":155, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":11, "ts":1673772846032472, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1673772846042584, "dur":391099, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":11, "ts":1673772846433715, "dur":225962, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.CoreModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1673772846659685, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1673772846659698, "dur":3505, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.CoreModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1673772846663258, "dur":219016, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/System.Drawing.dll" }}
+,{ "pid":12345, "tid":11, "ts":1673772846882284, "dur":6, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1673772846882300, "dur":1662, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/System.Drawing.dll" }}
+,{ "pid":12345, "tid":11, "ts":1673772846883996, "dur":229582, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1673772846029702, "dur":104, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1673772846029806, "dur":2539, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1673772846032345, "dur":15598, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":12, "ts":1673772846047946, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1673772846048047, "dur":4438, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":12, "ts":1673772846052504, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/MonoBleedingEdge/etc/mono/config" }}
+,{ "pid":12345, "tid":12, "ts":1673772846052550, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1673772846052558, "dur":133585, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/MonoBleedingEdge/etc/mono/config" }}
+,{ "pid":12345, "tid":12, "ts":1673772846186176, "dur":81237, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.XRModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1673772846267986, "dur":5, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1673772846268005, "dur":4337, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.XRModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1673772846272409, "dur":35200, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.TLSModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1673772846307618, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1673772846307632, "dur":4191, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.TLSModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1673772846311871, "dur":69402, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.TerrainModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1673772846381287, "dur":5, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1673772846381303, "dur":1872, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.TerrainModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1673772846383223, "dur":46732, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1673772846429966, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1673772846429982, "dur":3290, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1673772846433316, "dur":28878, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.DirectorModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1673772846462205, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1673772846462218, "dur":4876, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.DirectorModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1673772846467145, "dur":69980, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.AnimationModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1673772846537135, "dur":4, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1673772846537151, "dur":6558, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.AnimationModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1673772846543777, "dur":103405, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/Unity.Services.Core.Environments.dll" }}
+,{ "pid":12345, "tid":12, "ts":1673772846647192, "dur":6, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1673772846647208, "dur":65922, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/Unity.Services.Core.Environments.dll" }}
+,{ "pid":12345, "tid":12, "ts":1673772846713179, "dur":136673, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/System.Configuration.dll" }}
+,{ "pid":12345, "tid":12, "ts":1673772846849861, "dur":4, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1673772846849875, "dur":1813, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/System.Configuration.dll" }}
+,{ "pid":12345, "tid":12, "ts":1673772846851736, "dur":261605, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1673772846029748, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1673772846029748, "dur":2550, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1673772846032307, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"WriteText Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info" }}
+,{ "pid":12345, "tid":13, "ts":1673772846032313, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1673772846035080, "dur":587, "ph":"X", "name": "WriteText",  "args": { "detail":"Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info" }}
+,{ "pid":12345, "tid":13, "ts":1673772846035680, "dur":82, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/app.info" }}
+,{ "pid":12345, "tid":13, "ts":1673772846035765, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1673772846038818, "dur":147330, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/app.info" }}
+,{ "pid":12345, "tid":13, "ts":1673772846186154, "dur":63, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":13, "ts":1673772846186220, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1673772846186563, "dur":33400, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":13, "ts":1673772846219992, "dur":45760, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1673772846265757, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1673772846265764, "dur":15613, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1673772846281456, "dur":42975, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.TilemapModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1673772846324437, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1673772846324450, "dur":5869, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.TilemapModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1673772846330370, "dur":32352, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.StreamingModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1673772846362731, "dur":4, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1673772846362745, "dur":3122, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.StreamingModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1673772846365938, "dur":33519, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1673772846399464, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1673772846399477, "dur":3014, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1673772846402546, "dur":25923, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1673772846428477, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1673772846428492, "dur":3722, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1673772846432281, "dur":48084, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.dll" }}
+,{ "pid":12345, "tid":13, "ts":1673772846480377, "dur":7, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1673772846480396, "dur":1943, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.dll" }}
+,{ "pid":12345, "tid":13, "ts":1673772846482392, "dur":93845, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":13, "ts":1673772846576250, "dur":6, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1673772846576269, "dur":1895, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":13, "ts":1673772846578213, "dur":324150, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/System.Xml.dll" }}
+,{ "pid":12345, "tid":13, "ts":1673772846902368, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1673772846902376, "dur":3911, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/System.Xml.dll" }}
+,{ "pid":12345, "tid":13, "ts":1673772846906348, "dur":207186, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1673772846029816, "dur":1, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1673772846029817, "dur":2494, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1673772846032312, "dur":174, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":14, "ts":1673772846032491, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1673772846050139, "dur":3069, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":14, "ts":1673772846053226, "dur":131362, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":14, "ts":1673772846184598, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1673772846185129, "dur":3031, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":14, "ts":1673772846188192, "dur":46308, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1673772846234509, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1673772846234521, "dur":3624, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1673772846238193, "dur":41331, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1673772846279540, "dur":5, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1673772846279567, "dur":6428, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1673772846286046, "dur":59749, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1673772846345804, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1673772846345817, "dur":15103, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1673772846360971, "dur":24894, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1673772846385873, "dur":4, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1673772846385884, "dur":1561, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1673772846387497, "dur":40999, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.LocalizationModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1673772846428501, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1673772846428509, "dur":3027, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.LocalizationModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1673772846431598, "dur":80732, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1673772846512362, "dur":6, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1673772846512382, "dur":1715, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1673772846514136, "dur":35432, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/Unity.Services.Core.Networking.dll" }}
+,{ "pid":12345, "tid":14, "ts":1673772846549580, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1673772846549593, "dur":1917, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/Unity.Services.Core.Networking.dll" }}
+,{ "pid":12345, "tid":14, "ts":1673772846551561, "dur":97420, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/Unity.Services.Core.dll" }}
+,{ "pid":12345, "tid":14, "ts":1673772846648991, "dur":4, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1673772846649008, "dur":4717, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/Unity.Services.Core.dll" }}
+,{ "pid":12345, "tid":14, "ts":1673772846653764, "dur":178637, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":14, "ts":1673772846832406, "dur":4, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1673772846832416, "dur":2269, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":14, "ts":1673772846834727, "dur":38, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/level0" }}
+,{ "pid":12345, "tid":14, "ts":1673772846834768, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1673772846834778, "dur":2203, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/level0" }}
+,{ "pid":12345, "tid":14, "ts":1673772846837024, "dur":145, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/boot.config" }}
+,{ "pid":12345, "tid":14, "ts":1673772846837172, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1673772846837177, "dur":7983, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/boot.config" }}
+,{ "pid":12345, "tid":14, "ts":1673772846845214, "dur":268369, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1673772846029842, "dur":1, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1673772846029843, "dur":2464, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1673772846032308, "dur":14870, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":15, "ts":1673772846047183, "dur":4, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1673772846047224, "dur":5453, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":15, "ts":1673772846052696, "dur":27, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":15, "ts":1673772846052725, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1673772846052731, "dur":162965, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":15, "ts":1673772846215721, "dur":33993, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1673772846249726, "dur":10, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1673772846249746, "dur":2476, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1673772846252269, "dur":35142, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.UmbraModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1673772846287422, "dur":4, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1673772846287437, "dur":2577, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.UmbraModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1673772846290066, "dur":129512, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1673772846419602, "dur":7, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1673772846419626, "dur":6530, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1673772846426224, "dur":38283, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.GridModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1673772846464522, "dur":5, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1673772846464537, "dur":2697, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.GridModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1673772846467269, "dur":180049, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1673772846647323, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1673772846647331, "dur":2027, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1673772846649402, "dur":119785, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/System.IO.Compression.FileSystem.dll" }}
+,{ "pid":12345, "tid":15, "ts":1673772846769194, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1673772846769206, "dur":1559, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/System.IO.Compression.FileSystem.dll" }}
+,{ "pid":12345, "tid":15, "ts":1673772846770828, "dur":336679, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/mscorlib.dll" }}
+,{ "pid":12345, "tid":15, "ts":1673772847107513, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1673772847107522, "dur":5642, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/mscorlib.dll" }}
+,{ "pid":12345, "tid":15, "ts":1673772847113212, "dur":2, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"Player" }}
+,{ "pid":12345, "tid":15, "ts":1673772847113216, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1673772846029872, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1673772846029873, "dur":2427, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1673772846032307, "dur":159, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":16, "ts":1673772846032469, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1673772846040732, "dur":17278, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":16, "ts":1673772846058039, "dur":134805, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":16, "ts":1673772846192853, "dur":4, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1673772846193025, "dur":10154, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":16, "ts":1673772846203199, "dur":30907, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.VehiclesModule.dll" }}
+,{ "pid":12345, "tid":16, "ts":1673772846234116, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1673772846234207, "dur":3068, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.VehiclesModule.dll" }}
+,{ "pid":12345, "tid":16, "ts":1673772846237593, "dur":27936, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
+,{ "pid":12345, "tid":16, "ts":1673772846265541, "dur":12, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1673772846265564, "dur":5072, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
+,{ "pid":12345, "tid":16, "ts":1673772846271090, "dur":171676, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":16, "ts":1673772846442775, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1673772846442787, "dur":1848, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":16, "ts":1673772846444684, "dur":27677, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.ClothModule.dll" }}
+,{ "pid":12345, "tid":16, "ts":1673772846472370, "dur":5, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1673772846472385, "dur":1537, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.ClothModule.dll" }}
+,{ "pid":12345, "tid":16, "ts":1673772846473964, "dur":79173, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.AIModule.dll" }}
+,{ "pid":12345, "tid":16, "ts":1673772846553145, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1673772846553157, "dur":14505, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/UnityEngine.AIModule.dll" }}
+,{ "pid":12345, "tid":16, "ts":1673772846567705, "dur":67494, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/Unity.Services.Core.Analytics.dll" }}
+,{ "pid":12345, "tid":16, "ts":1673772846635478, "dur":4, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1673772846635493, "dur":2183, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/Unity.Services.Core.Analytics.dll" }}
+,{ "pid":12345, "tid":16, "ts":1673772846638011, "dur":228742, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/System.Net.Http.dll" }}
+,{ "pid":12345, "tid":16, "ts":1673772846866761, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1673772846866773, "dur":1233, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/stefa/Downloads/UnityMaster_Lesson1-3_Data/Managed/System.Net.Http.dll" }}
+,{ "pid":12345, "tid":16, "ts":1673772846868066, "dur":245499, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1673772847118810, "dur":2398, "ph":"X", "name": "ProfilerWriteOutput" }
+,{ "pid": 0, "tid": 1, "ts": 1673772847157636, "dur": 946, "ph": "X", "name": "backend_profiler1.traceevents", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1673772847157061, "dur": 1571, "ph": "X", "name": "Write chrome-trace events", "args": {} },

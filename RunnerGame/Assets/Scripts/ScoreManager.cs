@@ -9,7 +9,7 @@ using System.Linq;
 public class ScoreManager : MonoBehaviour
 {
     public static ScoreManager instance;
-    
+
     public TextMeshProUGUI scoreText;
     public TextMeshProUGUI bestScoreText;
 
@@ -20,7 +20,7 @@ public class ScoreManager : MonoBehaviour
     {
         instance = this;
     }
-    
+
     void Start()
     {
         bestScore = PlayerPrefs.GetInt("highscore", 0);
@@ -38,6 +38,8 @@ public class ScoreManager : MonoBehaviour
             bestScore = score;
             bestScoreText.text = "Best Score: " + bestScore.ToString();
             PlayerPrefs.SetInt("highscore", bestScore);
+
+            NewRecordController.instance.NewRecord();
         }
     }
 

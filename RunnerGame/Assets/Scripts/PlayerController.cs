@@ -5,6 +5,7 @@ using System.Security.Cryptography;
 using System.Threading;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 [RequireComponent(typeof(AudioSource))]
 public class PlayerController : MonoBehaviour
@@ -41,7 +42,7 @@ public class PlayerController : MonoBehaviour
 
         characterController = GetComponent<CharacterController>();
 
-        transform.position = new Vector3(0,-0.3f,0);
+        transform.position = new Vector3(0, -0.3f, 0);
 
         screenWidth = Screen.width;
 
@@ -71,12 +72,14 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter(Collider other) {
+    private void OnTriggerEnter(Collider other)
+    {
 
         if (other.tag == "JumpObstacle")
         {
             LivesManager.instance.RemoveLife();
-            if (LivesManager.instance.isDead){
+            if (LivesManager.instance.isDead)
+            {
                 Destroy(other.gameObject);
                 prev_speed = speed;
                 StartCoroutine(gameEnd());
@@ -92,7 +95,7 @@ public class PlayerController : MonoBehaviour
                 audioData[1].Play(0);
                 ScoreManager.instance.AddPoints(2);
             }
-                
+
             if (GameObject.Find("Body").GetComponent<Renderer>().material.color != other.GetComponent<Renderer>().material.color)
             {
                 LivesManager.instance.RemoveLife();

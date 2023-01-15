@@ -4,10 +4,12 @@ ScriptsOnlyBuild:
     - CoinRotate
     - DiamondRotate
     - GameOverManager
+    - HighscoreTable
     - LivesManager
     - ObjectPools
     - ObstacleController
     - PlayerController
+    - QuitManager
     - RandomMatGen
     - ScoreManager
     - SoundManager
@@ -82,11 +84,20 @@ ScriptsOnlyBuild:
     fullTypeName: SoundManager
     methodName: OnButtonPress
   - assembly: Assembly-CSharp
+    fullTypeName: ScoreManager
+    methodName: BackToGameOverScreen
+  - assembly: Assembly-CSharp
+    fullTypeName: ScoreManager
+    methodName: ViewHighscoreList
+  - assembly: Assembly-CSharp
     fullTypeName: PlayerController
     methodName: setSpeedRestart
   - assembly: Assembly-CSharp
     fullTypeName: ScoreManager
     methodName: InputHighScore
+  - assembly: Assembly-CSharp
+    fullTypeName: ScoreManager
+    methodName: AddResultToHighscore
   sceneClasses:
     Assets/Scenes/SampleScene.unity:
     - Class: 1
@@ -126,45 +137,49 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1720}
+      Script: {instanceID: 1584}
     - Class: 114
-      Script: {instanceID: 1744}
+      Script: {instanceID: 1608}
     - Class: 114
-      Script: {instanceID: 1978}
+      Script: {instanceID: 1842}
     - Class: 114
-      Script: {instanceID: 2154}
+      Script: {instanceID: 2018}
     - Class: 114
-      Script: {instanceID: 2244}
+      Script: {instanceID: 2108}
     - Class: 114
-      Script: {instanceID: 2456}
+      Script: {instanceID: 2320}
     - Class: 114
-      Script: {instanceID: 2634}
+      Script: {instanceID: 2498}
     - Class: 114
-      Script: {instanceID: 2748}
+      Script: {instanceID: 2612}
     - Class: 114
-      Script: {instanceID: 2798}
+      Script: {instanceID: 2662}
     - Class: 114
-      Script: {instanceID: 2938}
+      Script: {instanceID: 2802}
     - Class: 114
-      Script: {instanceID: 2944}
+      Script: {instanceID: 2808}
     - Class: 114
-      Script: {instanceID: 2990}
+      Script: {instanceID: 2854}
     - Class: 114
-      Script: {instanceID: 3082}
+      Script: {instanceID: 2946}
     - Class: 114
-      Script: {instanceID: 3156}
+      Script: {instanceID: 3020}
     - Class: 114
-      Script: {instanceID: 3256}
+      Script: {instanceID: 3120}
     - Class: 114
-      Script: {instanceID: 3570}
+      Script: {instanceID: 3434}
     - Class: 114
-      Script: {instanceID: 3776}
+      Script: {instanceID: 3640}
     - Class: 114
-      Script: {instanceID: 4176}
+      Script: {instanceID: 4040}
     - Class: 114
-      Script: {instanceID: 4420}
+      Script: {instanceID: 4284}
     - Class: 114
-      Script: {instanceID: 4916}
+      Script: {instanceID: 4358}
+    - Class: 114
+      Script: {instanceID: 4782}
+    - Class: 114
+      Script: {instanceID: 41912}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -211,33 +226,33 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1720}
+      Script: {instanceID: 1584}
     - Class: 114
-      Script: {instanceID: 1978}
+      Script: {instanceID: 1842}
     - Class: 114
-      Script: {instanceID: 2244}
+      Script: {instanceID: 2108}
     - Class: 114
-      Script: {instanceID: 2290}
+      Script: {instanceID: 2154}
     - Class: 114
-      Script: {instanceID: 2634}
+      Script: {instanceID: 2498}
     - Class: 114
-      Script: {instanceID: 2748}
+      Script: {instanceID: 2612}
     - Class: 114
-      Script: {instanceID: 2776}
+      Script: {instanceID: 2640}
     - Class: 114
-      Script: {instanceID: 2798}
+      Script: {instanceID: 2662}
     - Class: 114
-      Script: {instanceID: 2938}
+      Script: {instanceID: 2802}
     - Class: 114
-      Script: {instanceID: 3156}
+      Script: {instanceID: 3020}
     - Class: 114
-      Script: {instanceID: 3256}
+      Script: {instanceID: 3120}
     - Class: 114
-      Script: {instanceID: 4296}
+      Script: {instanceID: 4160}
     - Class: 114
-      Script: {instanceID: 4580}
+      Script: {instanceID: 4446}
     - Class: 114
-      Script: {instanceID: 4676}
+      Script: {instanceID: 4542}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -347,7 +362,7 @@ ScriptsOnlyBuild:
     className: GroupTrack
   - hash:
       serializedVersion: 2
-      Hash: 6bfea31ff8a9c7a120ae3914029c522d
+      Hash: b47a718ae08167a1138daf0277610c24
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ScoreManager
@@ -719,6 +734,12 @@ ScriptsOnlyBuild:
     className: TMP_SubMeshUI
   - hash:
       serializedVersion: 2
+      Hash: 93e80a7548bb280d3640c64b0b1e4af7
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: HighscoreTable
+  - hash:
+      serializedVersion: 2
       Hash: fd68d84f33fad85aac38f2739c0ee270
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -765,8 +786,14 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
     className: TouchInputModule
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: QuitManager
   platform: 19
   scenePathNames:
   - Assets/Scenes/StartMenu.unity
   - Assets/Scenes/SampleScene.unity
-  playerPath: C:/Users/stefa/Downloads/UnityMaster_Lesson1-3.exe
+  playerPath: C:/Users/lucia/OneDrive/Desktop/Facultate/Anul 3/jocuri/Joc/UnityMaster_Lesson1-3.exe

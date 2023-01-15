@@ -29,8 +29,14 @@ public class ScoreManager : MonoBehaviour
     void Start()
     {
         bestScore = PlayerPrefs.GetInt("highscore", 0);
-        scoreText.text = "Score: " + score.ToString();
-        bestScoreText.text = "Best Score: " + bestScore.ToString();
+        if (scoreText != null)
+        {
+            scoreText.text = "Score: " + score.ToString();
+        }
+        if (bestScoreText != null)
+        {
+            bestScoreText.text = "Best Score: " + bestScore.ToString();
+        }
     }
 
     public void AddPoints(int numberOfPoints)
@@ -63,9 +69,6 @@ public class ScoreManager : MonoBehaviour
     {
         var textScore = scoreText.GetComponent<TextMeshProUGUI>().text;
         var scoreString = textScore.Split(char.Parse(" "));
-
-        UnityEngine.Debug.Log(Int32.Parse(scoreString[1]));
-        UnityEngine.Debug.Log(playerNameFromInput.GetComponent<TextMeshProUGUI>().text);
 
         highscoreTable.AddHighscoreEntry(Int32.Parse(scoreString[1]), playerNameFromInput.GetComponent<TextMeshProUGUI>().text);
     }

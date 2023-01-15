@@ -881,14 +881,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9be25b4dfad132b40a78132b6e8bcbe4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  highscoreTable: {fileID: 0}
   scoreText: {fileID: 0}
   bestScoreText: {fileID: 0}
-  name1: {fileID: 0}
-  name2: {fileID: 0}
-  name3: {fileID: 0}
-  score1: {fileID: 0}
-  score2: {fileID: 0}
-  score3: {fileID: 0}
+  gameOverScreen: {fileID: 0}
+  highscoreList: {fileID: 0}
 --- !u!1 &882597925
 GameObject:
   m_ObjectHideFlags: 0
@@ -1164,7 +1161,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: W key - jump, A key - left, D key - right
+  m_text: W/Up key- jump, A/Left key - left, D/Right key - right
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

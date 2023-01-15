@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Collections.Specialized;
 using System.Security.Cryptography;
+using System.Threading;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -74,9 +76,13 @@ public class PlayerController : MonoBehaviour
         if (other.tag == "JumpObstacle")
         {
             Destroy(other.gameObject);
-            prev_speed = speed;
-            StartCoroutine(gameEnd());
-            audioData[2].Play(0);
+
+            LivesManager.instance.RemoveLife();
+            if (LivesManager.instance.isDead){
+                prev_speed = speed;
+                StartCoroutine(gameEnd());
+                audioData[2].Play(0);
+            }
         }
         if (other.GetComponentInChildren<Transform>().tag == "Obstacle")
         {
@@ -90,10 +96,14 @@ public class PlayerController : MonoBehaviour
                 
             if (GameObject.Find("Body").GetComponent<Renderer>().material.color != other.GetComponent<Renderer>().material.color)
             {
-                prev_speed = speed;
-                holdPosition = characterController.transform.position;
-                StartCoroutine(gameEnd());
-                audioData[2].Play(0);
+                LivesManager.instance.RemoveLife();
+                if (LivesManager.instance.isDead)
+                {
+                    prev_speed = speed;
+                    holdPosition = characterController.transform.position;
+                    StartCoroutine(gameEnd());
+                    audioData[2].Play(0);
+                }
             }
         }
         if (other.gameObject.tag == "cointag")

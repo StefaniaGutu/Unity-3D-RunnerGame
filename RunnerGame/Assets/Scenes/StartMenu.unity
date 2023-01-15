@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748172, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -767,6 +767,7 @@ GameObject:
   - component: {fileID: 806195834}
   - component: {fileID: 806195833}
   - component: {fileID: 806195837}
+  - component: {fileID: 806195838}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -868,6 +869,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eaaeb5010d4f985448ed5be7668f9703, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &806195838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 806195832}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9be25b4dfad132b40a78132b6e8bcbe4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  highscoreTable: {fileID: 0}
+  scoreText: {fileID: 0}
+  bestScoreText: {fileID: 0}
+  gameOverScreen: {fileID: 0}
+  highscoreList: {fileID: 0}
 --- !u!1 &882597925
 GameObject:
   m_ObjectHideFlags: 0
@@ -1143,7 +1161,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: W key - jump, A key - left, D key - right
+  m_text: W/Up key- jump, A/Left key - left, D/Right key - right
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

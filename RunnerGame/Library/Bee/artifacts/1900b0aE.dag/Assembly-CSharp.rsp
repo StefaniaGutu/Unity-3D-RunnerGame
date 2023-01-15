@@ -342,6 +342,7 @@
 "Assets/Scripts/DiamondRotate.cs"
 "Assets/Scripts/GameOverManager.cs"
 "Assets/Scripts/HighScore.cs"
+"Assets/Scripts/HighscoreTable.cs"
 "Assets/Scripts/LivesManager.cs"
 "Assets/Scripts/ObjectPools.cs"
 "Assets/Scripts/ObstacleController.cs"

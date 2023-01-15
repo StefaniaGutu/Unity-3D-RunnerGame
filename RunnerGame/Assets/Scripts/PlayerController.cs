@@ -75,9 +75,10 @@ public class PlayerController : MonoBehaviour
 
         if (other.tag == "JumpObstacle")
         {
+            Destroy(other.gameObject);
+
             LivesManager.instance.RemoveLife();
             if (LivesManager.instance.isDead){
-                Destroy(other.gameObject);
                 prev_speed = speed;
                 StartCoroutine(gameEnd());
                 audioData[2].Play(0);

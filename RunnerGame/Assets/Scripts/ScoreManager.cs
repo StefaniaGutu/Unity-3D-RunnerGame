@@ -5,22 +5,27 @@ using UnityEngine.UI;
 using TMPro;
 using System.Diagnostics;
 using System.Linq;
+using System;
 
 public class ScoreManager : MonoBehaviour
 {
     public static ScoreManager instance;
+    [SerializeField] HighscoreTable highscoreTable;
     
     public TextMeshProUGUI scoreText;
     public TextMeshProUGUI bestScoreText;
 
-    int score;
+    int score = 0;
     int bestScore;
+
+    [SerializeField] GameObject gameOverScreen;
+    [SerializeField] GameObject highscoreList;
 
     public void Awake()
     {
         instance = this;
     }
-    
+
     void Start()
     {
         bestScore = PlayerPrefs.GetInt("highscore", 0);
@@ -39,6 +44,30 @@ public class ScoreManager : MonoBehaviour
             bestScoreText.text = "Best Score: " + bestScore.ToString();
             PlayerPrefs.SetInt("highscore", bestScore);
         }
+    }
+
+    public void ViewHighscoreList()
+    {
+        gameOverScreen.SetActive(false);
+        highscoreList.SetActive(true);
+    }
+
+
+    public void BackToGameOverScreen()
+    {
+        highscoreList.SetActive(false);
+        gameOverScreen.SetActive(true);
+    }
+
+    public void AddResultToHighscore(GameObject playerNameFromInput)
+    {
+        var textScore = scoreText.GetComponent<TextMeshProUGUI>().text;
+        var scoreString = textScore.Split(char.Parse(" "));
+
+        UnityEngine.Debug.Log(Int32.Parse(scoreString[1]));
+        UnityEngine.Debug.Log(playerNameFromInput.GetComponent<TextMeshProUGUI>().text);
+
+        highscoreTable.AddHighscoreEntry(Int32.Parse(scoreString[1]), playerNameFromInput.GetComponent<TextMeshProUGUI>().text);
     }
 
     public void InputHighScore(string playerNameFromInput)

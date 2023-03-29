@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Collections.Specialized;
+using System.Diagnostics;
 using System.Security.Cryptography;
 using System.Threading;
 using UnityEngine;
@@ -15,6 +16,8 @@ public class PlayerController : MonoBehaviour
 
     public float prev_speed;
     private float addSpeed;
+
+    public ParticleSystem explosionParticleSystem;
 
     Vector3 moveVector = Vector3.zero;
     Vector3 holdPosition = Vector3.zero;
@@ -37,6 +40,7 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
+        explosionParticleSystem = GameObject.Find("Particle System").GetComponent<ParticleSystem>();
         m_Rigidbody = GetComponent<Rigidbody>();
 
         characterController = GetComponent<CharacterController>();
@@ -75,6 +79,10 @@ public class PlayerController : MonoBehaviour
 
         if (other.tag == "JumpObstacle")
         {
+            explosionParticleSystem.Play();
+            ParticleSystem.EmissionModule em = explosionParticleSystem.emission;
+            em.enabled = true;
+            UnityEngine.Debug.Log(explosionParticleSystem.name + " is playing " + explosionParticleSystem.isPlaying);
             Destroy(other.gameObject);
 
             LivesManager.instance.RemoveLife();

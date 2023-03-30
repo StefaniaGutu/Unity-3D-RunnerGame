@@ -1,33 +1,33 @@
 m_ProjectFiles:
   m_ManifestFileStatus:
-    m_FilePath: C:/Users/User/Documents/Facultate/Anul III/Jocuri/Unity-3D-RunnerGame/RunnerGame/Packages/manifest.json
+    m_FilePath: C:/Users/stefa/ProiectUnity/Unity-3D-RunnerGame/RunnerGame/Packages/manifest.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638157080860034889
+      ticks: 638157886752026860
     m_Hash: 3552808202
   m_LockFileStatus:
-    m_FilePath: C:/Users/User/Documents/Facultate/Anul III/Jocuri/Unity-3D-RunnerGame/RunnerGame/Packages/packages-lock.json
+    m_FilePath: C:/Users/stefa/ProiectUnity/Unity-3D-RunnerGame/RunnerGame/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638157081094924231
-    m_Hash: 1624167272
+      ticks: 638157893151624763
+    m_Hash: 1411942361
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
   m_LocalFileStatus: []
-m_ProjectPath: C:/Users/User/Documents/Facultate/Anul III/Jocuri/Unity-3D-RunnerGame/RunnerGame/Packages
-m_EditorVersion: 2022.2.7f1 (8331acaee5d3)
+m_ProjectPath: C:/Users/stefa/ProiectUnity/Unity-3D-RunnerGame/RunnerGame/Packages
+m_EditorVersion: 2021.3.11f1 (0a5ca18544bf)
 m_ResolvedPackages:
 - packageId: com.unity.ai.navigation@1.1.1
   testable: 0
   isDirectDependency: 1
   version: 1.1.1
   source: 1
-  resolvedPath: C:\Users\User\Documents\Facultate\Anul III\Jocuri\Unity-3D-RunnerGame\RunnerGame\Library\PackageCache\com.unity.ai.navigation@1.1.1
+  resolvedPath: C:\Users\stefa\ProiectUnity\Unity-3D-RunnerGame\RunnerGame\Library\PackageCache\com.unity.ai.navigation@1.1.1
   assetPath: Packages/com.unity.ai.navigation
   name: com.unity.ai.navigation
   displayName: AI Navigation
@@ -36,18 +36,26 @@ m_ResolvedPackages:
     email: 
     url: 
   category: 
-  type: 
+  type: asset
   description: High-level NavMesh components for building and using NavMeshes at
     runtime and at edit time.
-  status: 0
+  status: 4
   errors: []
   versions:
     all:
+    - 1.0.0-exp.1
+    - 1.0.0-exp.2
+    - 1.0.0-exp.3
+    - 1.0.0-exp.4
+    - 1.1.0-pre.1
+    - 1.1.0-pre.2
     - 1.1.1
     compatible:
-    - 1.1.1
-    recommended: 1.1.1
-    deprecated: []
+    - 1.0.0-exp.1
+    - 1.0.0-exp.2
+    - 1.0.0-exp.3
+    - 1.0.0-exp.4
+    verified: 
   dependencies:
   - name: com.unity.modules.ai
     version: 1.0.0
@@ -62,10 +70,9 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-    configSource: 0
-  hideInEditor: 1
+  hideInEditor: 0
   isAssetStorePackage: 0
-  datePublishedTicks: 0
+  datePublishedTicks: 638023206030000000
   documentationUrl: 
   hasRepository: 1
   repository:
@@ -74,19 +81,14 @@ m_ResolvedPackages:
     revision: 68f64fce84ec1c6721cae1231d5cf4003494eb08
     path: 
   unityLifecycle:
-    version: 1.1.1
+    version: 
     nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-  isDeprecated: 0
-  deprecationMessage: 
 - packageId: com.unity.collab-proxy@2.0.0
   testable: 0
   isDirectDependency: 1
   version: 2.0.0
   source: 1
-  resolvedPath: C:\Users\User\Documents\Facultate\Anul III\Jocuri\Unity-3D-RunnerGame\RunnerGame\Library\PackageCache\com.unity.collab-proxy@2.0.0
+  resolvedPath: C:\Users\stefa\ProiectUnity\Unity-3D-RunnerGame\RunnerGame\Library\PackageCache\com.unity.collab-proxy@2.0.0
   assetPath: Packages/com.unity.collab-proxy
   name: com.unity.collab-proxy
   displayName: Version Control
@@ -100,7 +102,7 @@ m_ResolvedPackages:
     or Plastic SCM for Unity (beta) in the Unity editor. To use Plastic SCM for Unity
     (beta), a Plastic SCM subscription is required. Learn more about how you can
     get started for free by visiting plasticscm.com.
-  status: 0
+  status: 4
   errors: []
   versions:
     all:
@@ -169,13 +171,22 @@ m_ResolvedPackages:
     - 2.1.0-preview.5
     - 2.1.0-preview.6
     compatible:
+    - 1.17.2
+    - 1.17.6
+    - 1.17.7
+    - 2.0.0-preview.6
+    - 2.0.0-preview.8
+    - 2.0.0-preview.15
+    - 2.0.0-preview.17
+    - 2.0.0-preview.20
+    - 2.0.0-preview.21
+    - 2.0.0-preview.22
     - 2.0.0
     - 2.0.1
     - 2.1.0-preview.3
     - 2.1.0-preview.5
     - 2.1.0-preview.6
-    recommended: 2.0.1
-    deprecated: []
+    verified: 1.17.7
   dependencies: []
   resolvedDependencies: []
   keywords:
@@ -199,7 +210,6 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-    configSource: 0
   hideInEditor: 0
   isAssetStorePackage: 0
   datePublishedTicks: 638095491550000000
@@ -211,19 +221,14 @@ m_ResolvedPackages:
     revision: a1b1151e0c90bc327ea95678473c1f3a935b2c9e
     path: 
   unityLifecycle:
-    version: 2.0.0
+    version: 1.17.2
     nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-  isDeprecated: 0
-  deprecationMessage: 
 - packageId: com.unity.ide.rider@3.0.18
   testable: 0
   isDirectDependency: 1
   version: 3.0.18
   source: 1
-  resolvedPath: C:\Users\User\Documents\Facultate\Anul III\Jocuri\Unity-3D-RunnerGame\RunnerGame\Library\PackageCache\com.unity.ide.rider@3.0.18
+  resolvedPath: C:\Users\stefa\ProiectUnity\Unity-3D-RunnerGame\RunnerGame\Library\PackageCache\com.unity.ide.rider@3.0.18
   assetPath: Packages/com.unity.ide.rider
   name: com.unity.ide.rider
   displayName: JetBrains Rider Editor
@@ -236,7 +241,7 @@ m_ResolvedPackages:
   description: The JetBrains Rider Editor package provides an integration for using
     the JetBrains Rider IDE as a code editor for Unity. It adds support for generating
     .csproj files for code completion and auto-discovery of installations.
-  status: 0
+  status: 4
   errors: []
   versions:
     all:
@@ -275,9 +280,11 @@ m_ResolvedPackages:
     - 3.0.17
     - 3.0.18
     compatible:
+    - 3.0.15
+    - 3.0.16
+    - 3.0.17
     - 3.0.18
-    recommended: 3.0.18
-    deprecated: []
+    verified: 3.0.18
   dependencies:
   - name: com.unity.ext.nunit
     version: 1.0.6
@@ -292,7 +299,6 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-    configSource: 0
   hideInEditor: 0
   isAssetStorePackage: 0
   datePublishedTicks: 638088746970000000
@@ -304,19 +310,14 @@ m_ResolvedPackages:
     revision: b40b39e6834c2915637f431d002d1f3dd8ec9ce5
     path: 
   unityLifecycle:
-    version: 3.0.18
+    version: 3.0.15
     nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-  isDeprecated: 0
-  deprecationMessage: 
 - packageId: com.unity.ide.visualstudio@2.0.17
   testable: 0
   isDirectDependency: 1
   version: 2.0.17
   source: 1
-  resolvedPath: C:\Users\User\Documents\Facultate\Anul III\Jocuri\Unity-3D-RunnerGame\RunnerGame\Library\PackageCache\com.unity.ide.visualstudio@2.0.17
+  resolvedPath: C:\Users\stefa\ProiectUnity\Unity-3D-RunnerGame\RunnerGame\Library\PackageCache\com.unity.ide.visualstudio@2.0.17
   assetPath: Packages/com.unity.ide.visualstudio
   name: com.unity.ide.visualstudio
   displayName: Visual Studio Editor
@@ -329,7 +330,7 @@ m_ResolvedPackages:
   description: Code editor integration for supporting Visual Studio as code editor
     for unity. Adds support for generating csproj files for intellisense purposes,
     auto discovery of installations, etc.
-  status: 0
+  status: 4
   errors: []
   versions:
     all:
@@ -354,9 +355,9 @@ m_ResolvedPackages:
     - 2.0.16
     - 2.0.17
     compatible:
+    - 2.0.16
     - 2.0.17
-    recommended: 2.0.17
-    deprecated: []
+    verified: 2.0.17
   dependencies:
   - name: com.unity.test-framework
     version: 1.1.9
@@ -377,7 +378,6 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-    configSource: 0
   hideInEditor: 0
   isAssetStorePackage: 0
   datePublishedTicks: 638059987360000000
@@ -389,19 +389,14 @@ m_ResolvedPackages:
     revision: 1f126893bfb18ea9661fb15771613e841467073c
     path: 
   unityLifecycle:
-    version: 2.0.17
+    version: 2.0.16
     nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-  isDeprecated: 0
-  deprecationMessage: 
 - packageId: com.unity.ide.vscode@1.2.5
   testable: 0
   isDirectDependency: 1
   version: 1.2.5
   source: 1
-  resolvedPath: C:\Users\User\Documents\Facultate\Anul III\Jocuri\Unity-3D-RunnerGame\RunnerGame\Library\PackageCache\com.unity.ide.vscode@1.2.5
+  resolvedPath: C:\Users\stefa\ProiectUnity\Unity-3D-RunnerGame\RunnerGame\Library\PackageCache\com.unity.ide.vscode@1.2.5
   assetPath: Packages/com.unity.ide.vscode
   name: com.unity.ide.vscode
   displayName: Visual Studio Code Editor
@@ -410,11 +405,11 @@ m_ResolvedPackages:
     email: 
     url: 
   category: 
-  type: asset
+  type: 
   description: Code editor integration for supporting Visual Studio Code as code
     editor for unity. Adds support for generating csproj files for intellisense purposes,
     auto discovery of installations, etc.
-  status: 0
+  status: 4
   errors: []
   versions:
     all:
@@ -433,8 +428,7 @@ m_ResolvedPackages:
     - 1.2.5
     compatible:
     - 1.2.5
-    recommended: 1.2.5
-    deprecated: []
+    verified: 1.2.5
   dependencies: []
   resolvedDependencies: []
   keywords: []
@@ -445,8 +439,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-    configSource: 0
-  hideInEditor: 0
+  hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 637800255360000000
   documentationUrl: 
@@ -459,17 +452,12 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.2.5
     nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-  isDeprecated: 0
-  deprecationMessage: 
 - packageId: com.unity.test-framework@1.1.33
   testable: 0
   isDirectDependency: 1
   version: 1.1.33
   source: 1
-  resolvedPath: C:\Users\User\Documents\Facultate\Anul III\Jocuri\Unity-3D-RunnerGame\RunnerGame\Library\PackageCache\com.unity.test-framework@1.1.33
+  resolvedPath: C:\Users\stefa\ProiectUnity\Unity-3D-RunnerGame\RunnerGame\Library\PackageCache\com.unity.test-framework@1.1.33
   assetPath: Packages/com.unity.test-framework
   name: com.unity.test-framework
   displayName: Test Framework
@@ -480,7 +468,7 @@ m_ResolvedPackages:
   category: Unity Test Framework
   type: asset
   description: Test framework for running Edit mode and Play mode tests in Unity.
-  status: 0
+  status: 4
   errors: []
   versions:
     all:
@@ -527,6 +515,7 @@ m_ResolvedPackages:
     - 2.0.1-pre.12
     - 2.0.1-pre.18
     compatible:
+    - 1.1.31
     - 1.1.33
     - 1.3.0
     - 1.3.1
@@ -536,8 +525,7 @@ m_ResolvedPackages:
     - 2.0.1-exp.2
     - 2.0.1-pre.12
     - 2.0.1-pre.18
-    recommended: 1.1.33
-    deprecated: []
+    verified: 1.1.33
   dependencies:
   - name: com.unity.ext.nunit
     version: 1.0.6
@@ -562,7 +550,6 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-    configSource: 0
   hideInEditor: 0
   isAssetStorePackage: 0
   datePublishedTicks: 637938212700000000
@@ -574,19 +561,14 @@ m_ResolvedPackages:
     revision: 34a4d423d64926635eb36d3bb86276179cc186e1
     path: 
   unityLifecycle:
-    version: 1.1.33
+    version: 1.1.31
     nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-  isDeprecated: 0
-  deprecationMessage: 
 - packageId: com.unity.textmeshpro@3.0.6
   testable: 0
   isDirectDependency: 1
   version: 3.0.6
   source: 1
-  resolvedPath: C:\Users\User\Documents\Facultate\Anul III\Jocuri\Unity-3D-RunnerGame\RunnerGame\Library\PackageCache\com.unity.textmeshpro@3.0.6
+  resolvedPath: C:\Users\stefa\ProiectUnity\Unity-3D-RunnerGame\RunnerGame\Library\PackageCache\com.unity.textmeshpro@3.0.6
   assetPath: Packages/com.unity.textmeshpro
   name: com.unity.textmeshpro
   displayName: TextMeshPro
@@ -616,7 +598,7 @@ m_ResolvedPackages:
     Great performance. Since the geometry created by TextMeshPro
     uses two triangles per character just like Unity''s text components, this improved
     visual quality and flexibility comes at no additional performance cost.'
-  status: 0
+  status: 4
   errors: []
   versions:
     all:
@@ -712,10 +694,7 @@ m_ResolvedPackages:
     - 3.2.0-pre.2
     - 3.2.0-pre.3
     - 3.2.0-pre.4
-    - 4.0.0-pre.1
-    - 4.0.0-pre.2
-    recommended: 3.0.6
-    deprecated: []
+    verified: 3.0.6
   dependencies:
   - name: com.unity.ugui
     version: 1.0.0
@@ -739,7 +718,6 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-    configSource: 0
   hideInEditor: 0
   isAssetStorePackage: 0
   datePublishedTicks: 637547111200000000
@@ -753,17 +731,12 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 3.0.6
     nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-  isDeprecated: 0
-  deprecationMessage: 
 - packageId: com.unity.timeline@1.7.2
   testable: 0
   isDirectDependency: 1
   version: 1.7.2
   source: 1
-  resolvedPath: C:\Users\User\Documents\Facultate\Anul III\Jocuri\Unity-3D-RunnerGame\RunnerGame\Library\PackageCache\com.unity.timeline@1.7.2
+  resolvedPath: C:\Users\stefa\ProiectUnity\Unity-3D-RunnerGame\RunnerGame\Library\PackageCache\com.unity.timeline@1.7.2
   assetPath: Packages/com.unity.timeline
   name: com.unity.timeline
   displayName: Timeline
@@ -775,7 +748,7 @@ m_ResolvedPackages:
   type: asset
   description: Use Unity Timeline to create cinematic content, game-play sequences,
     audio sequences, and complex particle effects.
-  status: 0
+  status: 4
   errors: []
   versions:
     all:
@@ -858,14 +831,18 @@ m_ResolvedPackages:
     - 1.8.1
     - 1.8.2
     compatible:
+    - 1.6.4
+    - 1.7.0-pre.1
+    - 1.7.0-pre.2
+    - 1.7.0
+    - 1.7.1
     - 1.7.2
     - 1.7.3
     - 1.7.4
     - 1.8.0
     - 1.8.1
     - 1.8.2
-    recommended: 1.7.4
-    deprecated: []
+    verified: 1.6.4
   dependencies:
   - name: com.unity.modules.director
     version: 1.0.0
@@ -897,7 +874,6 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-    configSource: 0
   hideInEditor: 0
   isAssetStorePackage: 0
   datePublishedTicks: 638019579250000000
@@ -909,19 +885,14 @@ m_ResolvedPackages:
     revision: 40b193547031a6a97c1fc47f71900f6690c33c6b
     path: 
   unityLifecycle:
-    version: 1.7.2
+    version: 1.6.4
     nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-  isDeprecated: 0
-  deprecationMessage: 
 - packageId: com.unity.ugui@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\User\Documents\Facultate\Anul III\Jocuri\Unity-3D-RunnerGame\RunnerGame\Library\PackageCache\com.unity.ugui@1.0.0
+  resolvedPath: C:\Users\stefa\ProiectUnity\Unity-3D-RunnerGame\RunnerGame\Library\PackageCache\com.unity.ugui@1.0.0
   assetPath: Packages/com.unity.ugui
   name: com.unity.ugui
   displayName: Unity UI
@@ -935,15 +906,14 @@ m_ResolvedPackages:
     and applications. It is a GameObject-based UI system that uses Components and
     the Game View to arrange, position, and style user interfaces. \u200B You cannot
     use Unity UI to create or change user interfaces in the Unity Editor."
-  status: 0
+  status: 4
   errors: []
   versions:
     all:
     - 1.0.0
     compatible:
     - 1.0.0
-    recommended: 1.0.0
-    deprecated: []
+    verified: 1.0.0
   dependencies:
   - name: com.unity.modules.ui
     version: 1.0.0
@@ -966,7 +936,6 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -980,17 +949,12 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.0.0
     nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-  isDeprecated: 0
-  deprecationMessage: 
 - packageId: com.unity.modules.ai@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\User\Documents\Facultate\Anul III\Jocuri\Unity-3D-RunnerGame\RunnerGame\Library\PackageCache\com.unity.modules.ai@1.0.0
+  resolvedPath: C:\Users\stefa\ProiectUnity\Unity-3D-RunnerGame\RunnerGame\Library\PackageCache\com.unity.modules.ai@1.0.0
   assetPath: Packages/com.unity.modules.ai
   name: com.unity.modules.ai
   displayName: AI
@@ -1002,15 +966,14 @@ m_ResolvedPackages:
   type: module
   description: 'The AI module implements the path finding features in Unity. Scripting
     API: https://docs.unity3d.com/ScriptReference/UnityEngine.AIModule.html'
-  status: 0
+  status: 4
   errors: []
   versions:
     all:
     - 1.0.0
     compatible:
     - 1.0.0
-    recommended: 1.0.0
-    deprecated: []
+    verified: 1.0.0
   dependencies: []
   resolvedDependencies: []
   keywords: []
@@ -1021,7 +984,6 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -1035,17 +997,12 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.0.0
     nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-  isDeprecated: 0
-  deprecationMessage: 
 - packageId: com.unity.modules.androidjni@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\User\Documents\Facultate\Anul III\Jocuri\Unity-3D-RunnerGame\RunnerGame\Library\PackageCache\com.unity.modules.androidjni@1.0.0
+  resolvedPath: C:\Users\stefa\ProiectUnity\Unity-3D-RunnerGame\RunnerGame\Library\PackageCache\com.unity.modules.androidjni@1.0.0
   assetPath: Packages/com.unity.modules.androidjni
   name: com.unity.modules.androidjni
   displayName: Android JNI
@@ -1056,15 +1013,14 @@ m_ResolvedPackages:
   category: 
   type: module
   description: 'AndroidJNI module allows you to call Java code. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.AndroidJNIModule.html'
-  status: 0
+  status: 4
   errors: []
   versions:
     all:
     - 1.0.0
     compatible:
     - 1.0.0
-    recommended: 1.0.0
-    deprecated: []
+    verified: 1.0.0
   dependencies: []
   resolvedDependencies: []
   keywords: []
@@ -1075,7 +1031,6 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -1089,17 +1044,12 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.0.0
     nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-  isDeprecated: 0
-  deprecationMessage: 
 - packageId: com.unity.modules.animation@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\User\Documents\Facultate\Anul III\Jocuri\Unity-3D-RunnerGame\RunnerGame\Library\PackageCache\com.unity.modules.animation@1.0.0
+  resolvedPath: C:\Users\stefa\ProiectUnity\Unity-3D-RunnerGame\RunnerGame\Library\PackageCache\com.unity.modules.animation@1.0.0
   assetPath: Packages/com.unity.modules.animation
   name: com.unity.modules.animation
   displayName: Animation
@@ -1111,15 +1061,14 @@ m_ResolvedPackages:
   type: module
   description: 'The Animation module implements Unity''s animation system. Scripting
     API: https://docs.unity3d.com/ScriptReference/UnityEngine.AnimationModule.html'
-  status: 0
+  status: 4
   errors: []
   versions:
     all:
     - 1.0.0
     compatible:
     - 1.0.0
-    recommended: 1.0.0
-    deprecated: []
+    verified: 1.0.0
   dependencies: []
   resolvedDependencies: []
   keywords: []
@@ -1130,7 +1079,6 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -1144,17 +1092,12 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.0.0
     nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-  isDeprecated: 0
-  deprecationMessage: 
 - packageId: com.unity.modules.assetbundle@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\User\Documents\Facultate\Anul III\Jocuri\Unity-3D-RunnerGame\RunnerGame\Library\PackageCache\com.unity.modules.assetbundle@1.0.0
+  resolvedPath: C:\Users\stefa\ProiectUnity\Unity-3D-RunnerGame\RunnerGame\Library\PackageCache\com.unity.modules.assetbundle@1.0.0
   assetPath: Packages/com.unity.modules.assetbundle
   name: com.unity.modules.assetbundle
   displayName: Asset Bundle
@@ -1166,15 +1109,14 @@ m_ResolvedPackages:
   type: module
   description: 'The AssetBundle module implements the AssetBundle class and related
     APIs to load data from AssetBundles. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.AssetBundleModule.html'
-  status: 0
+  status: 4
   errors: []
   versions:
     all:
     - 1.0.0
     compatible:
     - 1.0.0
-    recommended: 1.0.0
-    deprecated: []
+    verified: 1.0.0
   dependencies: []
   resolvedDependencies: []
   keywords: []
@@ -1185,7 +1127,6 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -1199,17 +1140,12 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.0.0
     nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-  isDeprecated: 0
-  deprecationMessage: 
 - packageId: com.unity.modules.audio@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\User\Documents\Facultate\Anul III\Jocuri\Unity-3D-RunnerGame\RunnerGame\Library\PackageCache\com.unity.modules.audio@1.0.0
+  resolvedPath: C:\Users\stefa\ProiectUnity\Unity-3D-RunnerGame\RunnerGame\Library\PackageCache\com.unity.modules.audio@1.0.0
   assetPath: Packages/com.unity.modules.audio
   name: com.unity.modules.audio
   displayName: Audio
@@ -1221,15 +1157,14 @@ m_ResolvedPackages:
   type: module
   description: 'The Audio module implements Unity''s audio system. Scripting API:
     https://docs.unity3d.com/ScriptReference/UnityEngine.AudioModule.html'
-  status: 0
+  status: 4
   errors: []
   versions:
     all:
     - 1.0.0
     compatible:
     - 1.0.0
-    recommended: 1.0.0
-    deprecated: []
+    verified: 1.0.0
   dependencies: []
   resolvedDependencies: []
   keywords: []
@@ -1240,7 +1175,6 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -1254,17 +1188,12 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.0.0
     nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-  isDeprecated: 0
-  deprecationMessage: 
 - packageId: com.unity.modules.cloth@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\User\Documents\Facultate\Anul III\Jocuri\Unity-3D-RunnerGame\RunnerGame\Library\PackageCache\com.unity.modules.cloth@1.0.0
+  resolvedPath: C:\Users\stefa\ProiectUnity\Unity-3D-RunnerGame\RunnerGame\Library\PackageCache\com.unity.modules.cloth@1.0.0
   assetPath: Packages/com.unity.modules.cloth
   name: com.unity.modules.cloth
   displayName: Cloth
@@ -1276,15 +1205,14 @@ m_ResolvedPackages:
   type: module
   description: 'The Cloth module implements cloth physics simulation through the
     Cloth component. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.ClothModule.html'
-  status: 0
+  status: 4
   errors: []
   versions:
     all:
     - 1.0.0
     compatible:
     - 1.0.0
-    recommended: 1.0.0
-    deprecated: []
+    verified: 1.0.0
   dependencies:
   - name: com.unity.modules.physics
     version: 1.0.0
@@ -1299,7 +1227,6 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -1313,17 +1240,12 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.0.0
     nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-  isDeprecated: 0
-  deprecationMessage: 
 - packageId: com.unity.modules.director@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\User\Documents\Facultate\Anul III\Jocuri\Unity-3D-RunnerGame\RunnerGame\Library\PackageCache\com.unity.modules.director@1.0.0
+  resolvedPath: C:\Users\stefa\ProiectUnity\Unity-3D-RunnerGame\RunnerGame\Library\PackageCache\com.unity.modules.director@1.0.0
   assetPath: Packages/com.unity.modules.director
   name: com.unity.modules.director
   displayName: Director
@@ -1335,15 +1257,14 @@ m_ResolvedPackages:
   type: module
   description: 'The Director module implements the PlayableDirector class. Scripting
     API: https://docs.unity3d.com/ScriptReference/UnityEngine.DirectorModule.html'
-  status: 0
+  status: 4
   errors: []
   versions:
     all:
     - 1.0.0
     compatible:
     - 1.0.0
-    recommended: 1.0.0
-    deprecated: []
+    verified: 1.0.0
   dependencies:
   - name: com.unity.modules.audio
     version: 1.0.0
@@ -1362,7 +1283,6 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -1376,17 +1296,12 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.0.0
     nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-  isDeprecated: 0
-  deprecationMessage: 
 - packageId: com.unity.modules.imageconversion@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\User\Documents\Facultate\Anul III\Jocuri\Unity-3D-RunnerGame\RunnerGame\Library\PackageCache\com.unity.modules.imageconversion@1.0.0
+  resolvedPath: C:\Users\stefa\ProiectUnity\Unity-3D-RunnerGame\RunnerGame\Library\PackageCache\com.unity.modules.imageconversion@1.0.0
   assetPath: Packages/com.unity.modules.imageconversion
   name: com.unity.modules.imageconversion
   displayName: Image Conversion
@@ -1399,15 +1314,14 @@ m_ResolvedPackages:
   description: 'The ImageConversion module implements the ImageConversion class which
     provides helper methods to convert images from and to PNG, JPEG or EXR formats.
     Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.ImageConversionModule.html'
-  status: 0
+  status: 4
   errors: []
   versions:
     all:
     - 1.0.0
     compatible:
     - 1.0.0
-    recommended: 1.0.0
-    deprecated: []
+    verified: 1.0.0
   dependencies: []
   resolvedDependencies: []
   keywords: []
@@ -1418,7 +1332,6 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -1432,17 +1345,12 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.0.0
     nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-  isDeprecated: 0
-  deprecationMessage: 
 - packageId: com.unity.modules.imgui@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\User\Documents\Facultate\Anul III\Jocuri\Unity-3D-RunnerGame\RunnerGame\Library\PackageCache\com.unity.modules.imgui@1.0.0
+  resolvedPath: C:\Users\stefa\ProiectUnity\Unity-3D-RunnerGame\RunnerGame\Library\PackageCache\com.unity.modules.imgui@1.0.0
   assetPath: Packages/com.unity.modules.imgui
   name: com.unity.modules.imgui
   displayName: IMGUI
@@ -1454,15 +1362,14 @@ m_ResolvedPackages:
   type: module
   description: 'The IMGUI module provides Unity''s immediate mode GUI solution for
     creating in-game and editor user interfaces. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.IMGUIModule.html'
-  status: 0
+  status: 4
   errors: []
   versions:
     all:
     - 1.0.0
     compatible:
     - 1.0.0
-    recommended: 1.0.0
-    deprecated: []
+    verified: 1.0.0
   dependencies: []
   resolvedDependencies: []
   keywords: []
@@ -1473,7 +1380,6 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -1487,17 +1393,12 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.0.0
     nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-  isDeprecated: 0
-  deprecationMessage: 
 - packageId: com.unity.modules.jsonserialize@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\User\Documents\Facultate\Anul III\Jocuri\Unity-3D-RunnerGame\RunnerGame\Library\PackageCache\com.unity.modules.jsonserialize@1.0.0
+  resolvedPath: C:\Users\stefa\ProiectUnity\Unity-3D-RunnerGame\RunnerGame\Library\PackageCache\com.unity.modules.jsonserialize@1.0.0
   assetPath: Packages/com.unity.modules.jsonserialize
   name: com.unity.modules.jsonserialize
   displayName: JSONSerialize
@@ -1509,15 +1410,14 @@ m_ResolvedPackages:
   type: module
   description: 'The JSONSerialize module provides the JsonUtility class which lets
     you serialize Unity Objects to JSON format. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.JSONSerializeModule.html'
-  status: 0
+  status: 4
   errors: []
   versions:
     all:
     - 1.0.0
     compatible:
     - 1.0.0
-    recommended: 1.0.0
-    deprecated: []
+    verified: 1.0.0
   dependencies: []
   resolvedDependencies: []
   keywords: []
@@ -1528,7 +1428,6 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -1542,17 +1441,12 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.0.0
     nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-  isDeprecated: 0
-  deprecationMessage: 
 - packageId: com.unity.modules.particlesystem@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\User\Documents\Facultate\Anul III\Jocuri\Unity-3D-RunnerGame\RunnerGame\Library\PackageCache\com.unity.modules.particlesystem@1.0.0
+  resolvedPath: C:\Users\stefa\ProiectUnity\Unity-3D-RunnerGame\RunnerGame\Library\PackageCache\com.unity.modules.particlesystem@1.0.0
   assetPath: Packages/com.unity.modules.particlesystem
   name: com.unity.modules.particlesystem
   displayName: Particle System
@@ -1564,15 +1458,14 @@ m_ResolvedPackages:
   type: module
   description: 'The ParticleSystem module implements Unity''s Particle System. Scripting
     API: https://docs.unity3d.com/ScriptReference/UnityEngine.ParticleSystemModule.html'
-  status: 0
+  status: 4
   errors: []
   versions:
     all:
     - 1.0.0
     compatible:
     - 1.0.0
-    recommended: 1.0.0
-    deprecated: []
+    verified: 1.0.0
   dependencies: []
   resolvedDependencies: []
   keywords: []
@@ -1583,7 +1476,6 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -1597,17 +1489,12 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.0.0
     nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-  isDeprecated: 0
-  deprecationMessage: 
 - packageId: com.unity.modules.physics@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\User\Documents\Facultate\Anul III\Jocuri\Unity-3D-RunnerGame\RunnerGame\Library\PackageCache\com.unity.modules.physics@1.0.0
+  resolvedPath: C:\Users\stefa\ProiectUnity\Unity-3D-RunnerGame\RunnerGame\Library\PackageCache\com.unity.modules.physics@1.0.0
   assetPath: Packages/com.unity.modules.physics
   name: com.unity.modules.physics
   displayName: Physics
@@ -1619,15 +1506,14 @@ m_ResolvedPackages:
   type: module
   description: 'The Physics module implements 3D physics in Unity. Scripting API:
     https://docs.unity3d.com/ScriptReference/UnityEngine.PhysicsModule.html'
-  status: 0
+  status: 4
   errors: []
   versions:
     all:
     - 1.0.0
     compatible:
     - 1.0.0
-    recommended: 1.0.0
-    deprecated: []
+    verified: 1.0.0
   dependencies: []
   resolvedDependencies: []
   keywords: []
@@ -1638,7 +1524,6 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -1652,17 +1537,12 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.0.0
     nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-  isDeprecated: 0
-  deprecationMessage: 
 - packageId: com.unity.modules.physics2d@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\User\Documents\Facultate\Anul III\Jocuri\Unity-3D-RunnerGame\RunnerGame\Library\PackageCache\com.unity.modules.physics2d@1.0.0
+  resolvedPath: C:\Users\stefa\ProiectUnity\Unity-3D-RunnerGame\RunnerGame\Library\PackageCache\com.unity.modules.physics2d@1.0.0
   assetPath: Packages/com.unity.modules.physics2d
   name: com.unity.modules.physics2d
   displayName: Physics 2D
@@ -1674,15 +1554,14 @@ m_ResolvedPackages:
   type: module
   description: 'The Physics2d module implements 2D physics in Unity. Scripting API:
     https://docs.unity3d.com/ScriptReference/UnityEngine.Physics2DModule.html'
-  status: 0
+  status: 4
   errors: []
   versions:
     all:
     - 1.0.0
     compatible:
     - 1.0.0
-    recommended: 1.0.0
-    deprecated: []
+    verified: 1.0.0
   dependencies: []
   resolvedDependencies: []
   keywords: []
@@ -1693,7 +1572,6 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -1707,17 +1585,12 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.0.0
     nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-  isDeprecated: 0
-  deprecationMessage: 
 - packageId: com.unity.modules.screencapture@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\User\Documents\Facultate\Anul III\Jocuri\Unity-3D-RunnerGame\RunnerGame\Library\PackageCache\com.unity.modules.screencapture@1.0.0
+  resolvedPath: C:\Users\stefa\ProiectUnity\Unity-3D-RunnerGame\RunnerGame\Library\PackageCache\com.unity.modules.screencapture@1.0.0
   assetPath: Packages/com.unity.modules.screencapture
   name: com.unity.modules.screencapture
   displayName: Screen Capture
@@ -1729,15 +1602,14 @@ m_ResolvedPackages:
   type: module
   description: 'The ScreenCapture module provides functionality to take screen shots
     using the ScreenCapture class. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.ScreenCaptureModule.html'
-  status: 0
+  status: 4
   errors: []
   versions:
     all:
     - 1.0.0
     compatible:
     - 1.0.0
-    recommended: 1.0.0
-    deprecated: []
+    verified: 1.0.0
   dependencies:
   - name: com.unity.modules.imageconversion
     version: 1.0.0
@@ -1752,7 +1624,6 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -1766,17 +1637,12 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.0.0
     nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-  isDeprecated: 0
-  deprecationMessage: 
 - packageId: com.unity.modules.terrain@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\User\Documents\Facultate\Anul III\Jocuri\Unity-3D-RunnerGame\RunnerGame\Library\PackageCache\com.unity.modules.terrain@1.0.0
+  resolvedPath: C:\Users\stefa\ProiectUnity\Unity-3D-RunnerGame\RunnerGame\Library\PackageCache\com.unity.modules.terrain@1.0.0
   assetPath: Packages/com.unity.modules.terrain
   name: com.unity.modules.terrain
   displayName: Terrain
@@ -1788,15 +1654,14 @@ m_ResolvedPackages:
   type: module
   description: 'The Terrain module implements Unity''s Terrain rendering engine available
     through the Terrain component. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.TerrainModule.html'
-  status: 0
+  status: 4
   errors: []
   versions:
     all:
     - 1.0.0
     compatible:
     - 1.0.0
-    recommended: 1.0.0
-    deprecated: []
+    verified: 1.0.0
   dependencies: []
   resolvedDependencies: []
   keywords: []
@@ -1807,7 +1672,6 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -1821,17 +1685,12 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.0.0
     nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-  isDeprecated: 0
-  deprecationMessage: 
 - packageId: com.unity.modules.terrainphysics@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\User\Documents\Facultate\Anul III\Jocuri\Unity-3D-RunnerGame\RunnerGame\Library\PackageCache\com.unity.modules.terrainphysics@1.0.0
+  resolvedPath: C:\Users\stefa\ProiectUnity\Unity-3D-RunnerGame\RunnerGame\Library\PackageCache\com.unity.modules.terrainphysics@1.0.0
   assetPath: Packages/com.unity.modules.terrainphysics
   name: com.unity.modules.terrainphysics
   displayName: Terrain Physics
@@ -1843,15 +1702,14 @@ m_ResolvedPackages:
   type: module
   description: 'The TerrainPhysics module connects the Terrain and Physics modules
     by implementing the TerrainCollider component. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.TerrainPhysicsModule.html'
-  status: 0
+  status: 4
   errors: []
   versions:
     all:
     - 1.0.0
     compatible:
     - 1.0.0
-    recommended: 1.0.0
-    deprecated: []
+    verified: 1.0.0
   dependencies:
   - name: com.unity.modules.physics
     version: 1.0.0
@@ -1870,7 +1728,6 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -1884,17 +1741,12 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.0.0
     nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-  isDeprecated: 0
-  deprecationMessage: 
 - packageId: com.unity.modules.tilemap@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\User\Documents\Facultate\Anul III\Jocuri\Unity-3D-RunnerGame\RunnerGame\Library\PackageCache\com.unity.modules.tilemap@1.0.0
+  resolvedPath: C:\Users\stefa\ProiectUnity\Unity-3D-RunnerGame\RunnerGame\Library\PackageCache\com.unity.modules.tilemap@1.0.0
   assetPath: Packages/com.unity.modules.tilemap
   name: com.unity.modules.tilemap
   displayName: Tilemap
@@ -1905,15 +1757,14 @@ m_ResolvedPackages:
   category: 
   type: module
   description: 'The Tilemap module implements the Tilemap class. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.TilemapModule.html'
-  status: 0
+  status: 4
   errors: []
   versions:
     all:
     - 1.0.0
     compatible:
     - 1.0.0
-    recommended: 1.0.0
-    deprecated: []
+    verified: 1.0.0
   dependencies:
   - name: com.unity.modules.physics2d
     version: 1.0.0
@@ -1928,7 +1779,6 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -1942,17 +1792,12 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.0.0
     nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-  isDeprecated: 0
-  deprecationMessage: 
 - packageId: com.unity.modules.ui@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\User\Documents\Facultate\Anul III\Jocuri\Unity-3D-RunnerGame\RunnerGame\Library\PackageCache\com.unity.modules.ui@1.0.0
+  resolvedPath: C:\Users\stefa\ProiectUnity\Unity-3D-RunnerGame\RunnerGame\Library\PackageCache\com.unity.modules.ui@1.0.0
   assetPath: Packages/com.unity.modules.ui
   name: com.unity.modules.ui
   displayName: UI
@@ -1964,15 +1809,14 @@ m_ResolvedPackages:
   type: module
   description: 'The UI module implements basic components required for Unity''s UI
     system Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.UIModule.html'
-  status: 0
+  status: 4
   errors: []
   versions:
     all:
     - 1.0.0
     compatible:
     - 1.0.0
-    recommended: 1.0.0
-    deprecated: []
+    verified: 1.0.0
   dependencies: []
   resolvedDependencies: []
   keywords: []
@@ -1983,7 +1827,6 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -1997,17 +1840,12 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.0.0
     nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-  isDeprecated: 0
-  deprecationMessage: 
 - packageId: com.unity.modules.uielements@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\User\Documents\Facultate\Anul III\Jocuri\Unity-3D-RunnerGame\RunnerGame\Library\PackageCache\com.unity.modules.uielements@1.0.0
+  resolvedPath: C:\Users\stefa\ProiectUnity\Unity-3D-RunnerGame\RunnerGame\Library\PackageCache\com.unity.modules.uielements@1.0.0
   assetPath: Packages/com.unity.modules.uielements
   name: com.unity.modules.uielements
   displayName: UIElements
@@ -2019,15 +1857,14 @@ m_ResolvedPackages:
   type: module
   description: 'The UIElements module implements the UIElements retained mode UI
     framework. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.UIElementsModule.html'
-  status: 0
+  status: 4
   errors: []
   versions:
     all:
     - 1.0.0
     compatible:
     - 1.0.0
-    recommended: 1.0.0
-    deprecated: []
+    verified: 1.0.0
   dependencies:
   - name: com.unity.modules.ui
     version: 1.0.0
@@ -2035,12 +1872,16 @@ m_ResolvedPackages:
     version: 1.0.0
   - name: com.unity.modules.jsonserialize
     version: 1.0.0
+  - name: com.unity.modules.uielementsnative
+    version: 1.0.0
   resolvedDependencies:
   - name: com.unity.modules.ui
     version: 1.0.0
   - name: com.unity.modules.imgui
     version: 1.0.0
   - name: com.unity.modules.jsonserialize
+    version: 1.0.0
+  - name: com.unity.modules.uielementsnative
     version: 1.0.0
   keywords: []
   registry:
@@ -2050,7 +1891,6 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -2064,17 +1904,12 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.0.0
     nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-  isDeprecated: 0
-  deprecationMessage: 
 - packageId: com.unity.modules.umbra@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\User\Documents\Facultate\Anul III\Jocuri\Unity-3D-RunnerGame\RunnerGame\Library\PackageCache\com.unity.modules.umbra@1.0.0
+  resolvedPath: C:\Users\stefa\ProiectUnity\Unity-3D-RunnerGame\RunnerGame\Library\PackageCache\com.unity.modules.umbra@1.0.0
   assetPath: Packages/com.unity.modules.umbra
   name: com.unity.modules.umbra
   displayName: Umbra
@@ -2086,15 +1921,14 @@ m_ResolvedPackages:
   type: module
   description: 'The Umbra module implements Unity''s occlusion culling system. Scripting
     API: https://docs.unity3d.com/ScriptReference/UnityEngine.UmbraModule.html'
-  status: 0
+  status: 4
   errors: []
   versions:
     all:
     - 1.0.0
     compatible:
     - 1.0.0
-    recommended: 1.0.0
-    deprecated: []
+    verified: 1.0.0
   dependencies: []
   resolvedDependencies: []
   keywords: []
@@ -2105,7 +1939,6 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -2119,17 +1952,12 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.0.0
     nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-  isDeprecated: 0
-  deprecationMessage: 
 - packageId: com.unity.modules.unityanalytics@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\User\Documents\Facultate\Anul III\Jocuri\Unity-3D-RunnerGame\RunnerGame\Library\PackageCache\com.unity.modules.unityanalytics@1.0.0
+  resolvedPath: C:\Users\stefa\ProiectUnity\Unity-3D-RunnerGame\RunnerGame\Library\PackageCache\com.unity.modules.unityanalytics@1.0.0
   assetPath: Packages/com.unity.modules.unityanalytics
   name: com.unity.modules.unityanalytics
   displayName: Unity Analytics
@@ -2141,15 +1969,14 @@ m_ResolvedPackages:
   type: module
   description: 'The UnityAnalytics module implements APIs required to use Unity Analytics.
     Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.UnityAnalyticsModule.html'
-  status: 0
+  status: 4
   errors: []
   versions:
     all:
     - 1.0.0
     compatible:
     - 1.0.0
-    recommended: 1.0.0
-    deprecated: []
+    verified: 1.0.0
   dependencies:
   - name: com.unity.modules.unitywebrequest
     version: 1.0.0
@@ -2168,7 +1995,6 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -2182,17 +2008,12 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.0.0
     nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-  isDeprecated: 0
-  deprecationMessage: 
 - packageId: com.unity.modules.unitywebrequest@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\User\Documents\Facultate\Anul III\Jocuri\Unity-3D-RunnerGame\RunnerGame\Library\PackageCache\com.unity.modules.unitywebrequest@1.0.0
+  resolvedPath: C:\Users\stefa\ProiectUnity\Unity-3D-RunnerGame\RunnerGame\Library\PackageCache\com.unity.modules.unitywebrequest@1.0.0
   assetPath: Packages/com.unity.modules.unitywebrequest
   name: com.unity.modules.unitywebrequest
   displayName: Unity Web Request
@@ -2204,15 +2025,14 @@ m_ResolvedPackages:
   type: module
   description: 'The UnityWebRequest module lets you communicate with http services.
     Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.UnityWebRequestModule.html'
-  status: 0
+  status: 4
   errors: []
   versions:
     all:
     - 1.0.0
     compatible:
     - 1.0.0
-    recommended: 1.0.0
-    deprecated: []
+    verified: 1.0.0
   dependencies: []
   resolvedDependencies: []
   keywords: []
@@ -2223,7 +2043,6 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -2237,17 +2056,12 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.0.0
     nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-  isDeprecated: 0
-  deprecationMessage: 
 - packageId: com.unity.modules.unitywebrequestassetbundle@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\User\Documents\Facultate\Anul III\Jocuri\Unity-3D-RunnerGame\RunnerGame\Library\PackageCache\com.unity.modules.unitywebrequestassetbundle@1.0.0
+  resolvedPath: C:\Users\stefa\ProiectUnity\Unity-3D-RunnerGame\RunnerGame\Library\PackageCache\com.unity.modules.unitywebrequestassetbundle@1.0.0
   assetPath: Packages/com.unity.modules.unitywebrequestassetbundle
   name: com.unity.modules.unitywebrequestassetbundle
   displayName: Unity Web Request Asset Bundle
@@ -2259,15 +2073,14 @@ m_ResolvedPackages:
   type: module
   description: 'The UnityWebRequestAssetBundle module provides the DownloadHandlerAssetBundle
     class to use UnityWebRequest to download Asset Bundles. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.UnityWebRequestAssetBundleModule.html'
-  status: 0
+  status: 4
   errors: []
   versions:
     all:
     - 1.0.0
     compatible:
     - 1.0.0
-    recommended: 1.0.0
-    deprecated: []
+    verified: 1.0.0
   dependencies:
   - name: com.unity.modules.assetbundle
     version: 1.0.0
@@ -2286,7 +2099,6 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -2300,17 +2112,12 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.0.0
     nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-  isDeprecated: 0
-  deprecationMessage: 
 - packageId: com.unity.modules.unitywebrequestaudio@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\User\Documents\Facultate\Anul III\Jocuri\Unity-3D-RunnerGame\RunnerGame\Library\PackageCache\com.unity.modules.unitywebrequestaudio@1.0.0
+  resolvedPath: C:\Users\stefa\ProiectUnity\Unity-3D-RunnerGame\RunnerGame\Library\PackageCache\com.unity.modules.unitywebrequestaudio@1.0.0
   assetPath: Packages/com.unity.modules.unitywebrequestaudio
   name: com.unity.modules.unitywebrequestaudio
   displayName: Unity Web Request Audio
@@ -2322,15 +2129,14 @@ m_ResolvedPackages:
   type: module
   description: 'The UnityWebRequestAudio module provides the DownloadHandlerAudioClip
     class to use UnityWebRequest to download AudioClips. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.UnityWebRequestAudioModule.html'
-  status: 0
+  status: 4
   errors: []
   versions:
     all:
     - 1.0.0
     compatible:
     - 1.0.0
-    recommended: 1.0.0
-    deprecated: []
+    verified: 1.0.0
   dependencies:
   - name: com.unity.modules.unitywebrequest
     version: 1.0.0
@@ -2349,7 +2155,6 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -2363,17 +2168,12 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.0.0
     nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-  isDeprecated: 0
-  deprecationMessage: 
 - packageId: com.unity.modules.unitywebrequesttexture@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\User\Documents\Facultate\Anul III\Jocuri\Unity-3D-RunnerGame\RunnerGame\Library\PackageCache\com.unity.modules.unitywebrequesttexture@1.0.0
+  resolvedPath: C:\Users\stefa\ProiectUnity\Unity-3D-RunnerGame\RunnerGame\Library\PackageCache\com.unity.modules.unitywebrequesttexture@1.0.0
   assetPath: Packages/com.unity.modules.unitywebrequesttexture
   name: com.unity.modules.unitywebrequesttexture
   displayName: Unity Web Request Texture
@@ -2385,15 +2185,14 @@ m_ResolvedPackages:
   type: module
   description: 'The UnityWebRequestTexture module provides the DownloadHandlerTexture
     class to use UnityWebRequest to download Textures. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.UnityWebRequestTextureModule.html'
-  status: 0
+  status: 4
   errors: []
   versions:
     all:
     - 1.0.0
     compatible:
     - 1.0.0
-    recommended: 1.0.0
-    deprecated: []
+    verified: 1.0.0
   dependencies:
   - name: com.unity.modules.unitywebrequest
     version: 1.0.0
@@ -2412,7 +2211,6 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -2426,17 +2224,12 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.0.0
     nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-  isDeprecated: 0
-  deprecationMessage: 
 - packageId: com.unity.modules.unitywebrequestwww@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\User\Documents\Facultate\Anul III\Jocuri\Unity-3D-RunnerGame\RunnerGame\Library\PackageCache\com.unity.modules.unitywebrequestwww@1.0.0
+  resolvedPath: C:\Users\stefa\ProiectUnity\Unity-3D-RunnerGame\RunnerGame\Library\PackageCache\com.unity.modules.unitywebrequestwww@1.0.0
   assetPath: Packages/com.unity.modules.unitywebrequestwww
   name: com.unity.modules.unitywebrequestwww
   displayName: Unity Web Request WWW
@@ -2448,15 +2241,14 @@ m_ResolvedPackages:
   type: module
   description: 'The UnityWebRequestWWW module implements the legacy WWW lets you
     communicate with http services. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.UnityWebRequestWWWModule.html'
-  status: 0
+  status: 4
   errors: []
   versions:
     all:
     - 1.0.0
     compatible:
     - 1.0.0
-    recommended: 1.0.0
-    deprecated: []
+    verified: 1.0.0
   dependencies:
   - name: com.unity.modules.unitywebrequest
     version: 1.0.0
@@ -2491,7 +2283,6 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -2505,17 +2296,12 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.0.0
     nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-  isDeprecated: 0
-  deprecationMessage: 
 - packageId: com.unity.modules.vehicles@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\User\Documents\Facultate\Anul III\Jocuri\Unity-3D-RunnerGame\RunnerGame\Library\PackageCache\com.unity.modules.vehicles@1.0.0
+  resolvedPath: C:\Users\stefa\ProiectUnity\Unity-3D-RunnerGame\RunnerGame\Library\PackageCache\com.unity.modules.vehicles@1.0.0
   assetPath: Packages/com.unity.modules.vehicles
   name: com.unity.modules.vehicles
   displayName: Vehicles
@@ -2527,15 +2313,14 @@ m_ResolvedPackages:
   type: module
   description: 'The Vehicles module implements vehicle physics simulation through
     the WheelCollider component. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.VehiclesModule.html'
-  status: 0
+  status: 4
   errors: []
   versions:
     all:
     - 1.0.0
     compatible:
     - 1.0.0
-    recommended: 1.0.0
-    deprecated: []
+    verified: 1.0.0
   dependencies:
   - name: com.unity.modules.physics
     version: 1.0.0
@@ -2550,7 +2335,6 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -2564,17 +2348,12 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.0.0
     nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-  isDeprecated: 0
-  deprecationMessage: 
 - packageId: com.unity.modules.video@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\User\Documents\Facultate\Anul III\Jocuri\Unity-3D-RunnerGame\RunnerGame\Library\PackageCache\com.unity.modules.video@1.0.0
+  resolvedPath: C:\Users\stefa\ProiectUnity\Unity-3D-RunnerGame\RunnerGame\Library\PackageCache\com.unity.modules.video@1.0.0
   assetPath: Packages/com.unity.modules.video
   name: com.unity.modules.video
   displayName: Video
@@ -2586,15 +2365,14 @@ m_ResolvedPackages:
   type: module
   description: 'The Video module lets you play back video files in your content.
     Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.VideoModule.html'
-  status: 0
+  status: 4
   errors: []
   versions:
     all:
     - 1.0.0
     compatible:
     - 1.0.0
-    recommended: 1.0.0
-    deprecated: []
+    verified: 1.0.0
   dependencies:
   - name: com.unity.modules.audio
     version: 1.0.0
@@ -2617,7 +2395,6 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -2631,17 +2408,12 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.0.0
     nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-  isDeprecated: 0
-  deprecationMessage: 
 - packageId: com.unity.modules.vr@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\User\Documents\Facultate\Anul III\Jocuri\Unity-3D-RunnerGame\RunnerGame\Library\PackageCache\com.unity.modules.vr@1.0.0
+  resolvedPath: C:\Users\stefa\ProiectUnity\Unity-3D-RunnerGame\RunnerGame\Library\PackageCache\com.unity.modules.vr@1.0.0
   assetPath: Packages/com.unity.modules.vr
   name: com.unity.modules.vr
   displayName: VR
@@ -2653,15 +2425,14 @@ m_ResolvedPackages:
   type: module
   description: 'The VR module implements support for virtual reality devices in Unity.
     Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.VRModule.html'
-  status: 0
+  status: 4
   errors: []
   versions:
     all:
     - 1.0.0
     compatible:
     - 1.0.0
-    recommended: 1.0.0
-    deprecated: []
+    verified: 1.0.0
   dependencies:
   - name: com.unity.modules.jsonserialize
     version: 1.0.0
@@ -2686,7 +2457,6 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -2700,17 +2470,12 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.0.0
     nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-  isDeprecated: 0
-  deprecationMessage: 
 - packageId: com.unity.modules.wind@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\User\Documents\Facultate\Anul III\Jocuri\Unity-3D-RunnerGame\RunnerGame\Library\PackageCache\com.unity.modules.wind@1.0.0
+  resolvedPath: C:\Users\stefa\ProiectUnity\Unity-3D-RunnerGame\RunnerGame\Library\PackageCache\com.unity.modules.wind@1.0.0
   assetPath: Packages/com.unity.modules.wind
   name: com.unity.modules.wind
   displayName: Wind
@@ -2722,15 +2487,14 @@ m_ResolvedPackages:
   type: module
   description: 'The Wind module implements the WindZone component which can affect
     terrain rendering and particle simulations. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.WindModule.html'
-  status: 0
+  status: 4
   errors: []
   versions:
     all:
     - 1.0.0
     compatible:
     - 1.0.0
-    recommended: 1.0.0
-    deprecated: []
+    verified: 1.0.0
   dependencies: []
   resolvedDependencies: []
   keywords: []
@@ -2741,7 +2505,6 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -2755,17 +2518,12 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.0.0
     nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-  isDeprecated: 0
-  deprecationMessage: 
 - packageId: com.unity.modules.xr@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\User\Documents\Facultate\Anul III\Jocuri\Unity-3D-RunnerGame\RunnerGame\Library\PackageCache\com.unity.modules.xr@1.0.0
+  resolvedPath: C:\Users\stefa\ProiectUnity\Unity-3D-RunnerGame\RunnerGame\Library\PackageCache\com.unity.modules.xr@1.0.0
   assetPath: Packages/com.unity.modules.xr
   name: com.unity.modules.xr
   displayName: XR
@@ -2777,15 +2535,14 @@ m_ResolvedPackages:
   type: module
   description: 'The XR module contains the VR and AR related platform support functionality.
     Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.XRModule.html'
-  status: 0
+  status: 4
   errors: []
   versions:
     all:
     - 1.0.0
     compatible:
     - 1.0.0
-    recommended: 1.0.0
-    deprecated: []
+    verified: 1.0.0
   dependencies:
   - name: com.unity.modules.physics
     version: 1.0.0
@@ -2808,7 +2565,6 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -2822,17 +2578,12 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.0.0
     nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-  isDeprecated: 0
-  deprecationMessage: 
 - packageId: com.unity.modules.subsystems@1.0.0
   testable: 0
   isDirectDependency: 0
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\User\Documents\Facultate\Anul III\Jocuri\Unity-3D-RunnerGame\RunnerGame\Library\PackageCache\com.unity.modules.subsystems@1.0.0
+  resolvedPath: C:\Users\stefa\ProiectUnity\Unity-3D-RunnerGame\RunnerGame\Library\PackageCache\com.unity.modules.subsystems@1.0.0
   assetPath: Packages/com.unity.modules.subsystems
   name: com.unity.modules.subsystems
   displayName: Subsystems
@@ -2844,15 +2595,14 @@ m_ResolvedPackages:
   type: module
   description: 'The Subsystem module contains the definitions and runtime support
     for general subsystems in Unity. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.SubsystemsModule.html'
-  status: 0
+  status: 4
   errors: []
   versions:
     all:
     - 1.0.0
     compatible:
     - 1.0.0
-    recommended: 1.0.0
-    deprecated: []
+    verified: 1.0.0
   dependencies:
   - name: com.unity.modules.jsonserialize
     version: 1.0.0
@@ -2867,7 +2617,6 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -2881,17 +2630,71 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 
     nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-  isDeprecated: 0
-  deprecationMessage: 
+- packageId: com.unity.modules.uielementsnative@1.0.0
+  testable: 0
+  isDirectDependency: 0
+  version: 1.0.0
+  source: 2
+  resolvedPath: C:\Users\stefa\ProiectUnity\Unity-3D-RunnerGame\RunnerGame\Library\PackageCache\com.unity.modules.uielementsnative@1.0.0
+  assetPath: Packages/com.unity.modules.uielementsnative
+  name: com.unity.modules.uielementsnative
+  displayName: UIElements Native
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: module
+  description: 
+  status: 4
+  errors: []
+  versions:
+    all:
+    - 1.0.0
+    compatible:
+    - 1.0.0
+    verified: 1.0.0
+  dependencies:
+  - name: com.unity.modules.ui
+    version: 1.0.0
+  - name: com.unity.modules.imgui
+    version: 1.0.0
+  - name: com.unity.modules.jsonserialize
+    version: 1.0.0
+  resolvedDependencies:
+  - name: com.unity.modules.ui
+    version: 1.0.0
+  - name: com.unity.modules.imgui
+    version: 1.0.0
+  - name: com.unity.modules.jsonserialize
+    version: 1.0.0
+  keywords: []
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+  hideInEditor: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 0
+  documentationUrl: 
+  hasRepository: 0
+  repository:
+    type: 
+    url: 
+    revision: 
+    path: 
+  unityLifecycle:
+    version: 
+    nextVersion: 
 - packageId: com.unity.ext.nunit@1.0.6
   testable: 0
   isDirectDependency: 0
   version: 1.0.6
   source: 1
-  resolvedPath: C:\Users\User\Documents\Facultate\Anul III\Jocuri\Unity-3D-RunnerGame\RunnerGame\Library\PackageCache\com.unity.ext.nunit@1.0.6
+  resolvedPath: C:\Users\stefa\ProiectUnity\Unity-3D-RunnerGame\RunnerGame\Library\PackageCache\com.unity.ext.nunit@1.0.6
   assetPath: Packages/com.unity.ext.nunit
   name: com.unity.ext.nunit
   displayName: Custom NUnit
@@ -2900,10 +2703,10 @@ m_ResolvedPackages:
     email: 
     url: 
   category: Libraries
-  type: asset
+  type: 
   description: Custom version of the nunit package build to work with Unity. Used
     by the Unity Test Framework.
-  status: 0
+  status: 4
   errors: []
   versions:
     all:
@@ -2919,8 +2722,7 @@ m_ResolvedPackages:
     - 1.0.6
     - 2.0.2
     - 2.0.3
-    recommended: 1.0.6
-    deprecated: []
+    verified: 1.0.6
   dependencies: []
   resolvedDependencies: []
   keywords:
@@ -2934,8 +2736,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-    configSource: 0
-  hideInEditor: 0
+  hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 637429759280000000
   documentationUrl: 
@@ -2948,8 +2749,3 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.0.6
     nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-  isDeprecated: 0
-  deprecationMessage: 

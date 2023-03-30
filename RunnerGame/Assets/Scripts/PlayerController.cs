@@ -38,6 +38,8 @@ public class PlayerController : MonoBehaviour
     public AudioClip CoinSound;
     public AudioClip DiamondSound;
 
+    public GameObject player; 
+
     void Start()
     {
         explosionParticleSystem = GameObject.Find("Particle System").GetComponent<ParticleSystem>();
@@ -84,12 +86,17 @@ public class PlayerController : MonoBehaviour
             em.enabled = true;
             UnityEngine.Debug.Log(explosionParticleSystem.name + " is playing " + explosionParticleSystem.isPlaying);
             Destroy(other.gameObject);
+            speed -= 1f;
 
             LivesManager.instance.RemoveLife();
             if (LivesManager.instance.isDead){
                 prev_speed = speed;
                 StartCoroutine(gameEnd());
                 audioData[2].Play(0);
+            }
+            else
+            {
+                StartCoroutine(BlinkGameObject());
             }
         }
         if (other.GetComponentInChildren<Transform>().tag == "Obstacle")
@@ -152,5 +159,32 @@ public class PlayerController : MonoBehaviour
         canMove = false;
         m_Rigidbody.constraints = RigidbodyConstraints.FreezeAll;
         yield return new WaitForSeconds(0.05f);
+    }
+
+    void HideObject()
+    {
+        characterController.transform.localScale = new Vector3(0f, 0f, 0f);
+    }
+
+    void ShowObject()
+    {
+        characterController.transform.localScale = new Vector3(1f, 1.5f, 1f);
+    }
+
+    public IEnumerator BlinkGameObject()
+    {
+        var mesh = GameObject.Find("Body").GetComponent<SkinnedMeshRenderer>();
+        var mesh2 = GameObject.Find("Crown").GetComponent<MeshRenderer>();
+
+        for (int i = 0; i < 2; i++)
+        {
+            mesh.enabled = false;
+            mesh2.enabled = false;
+            yield return new WaitForSeconds(0.2f);
+
+            mesh.enabled = true;
+            mesh2.enabled = true;
+            yield return new WaitForSeconds(0.2f);
+        }
     }
 }

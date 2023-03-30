@@ -5,9 +5,11 @@ MonoImporter:
   serializedVersion: 2
   defaultReferences:
   - explosionParticleSystem: {fileID: 2876408278387195348, guid: ab08306a5e99291469c554fe93c45a0a, type: 3}
+  - diamondParticleSystem: {fileID: 2358235079647356693, guid: 23d630ef1cfb62b409b793a563c496ed, type: 3}
   - gameOverManager: {instanceID: 0}
   - CoinSound: {instanceID: 0}
   - DiamondSound: {instanceID: 0}
+  - player: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

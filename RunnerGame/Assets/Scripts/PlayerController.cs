@@ -18,6 +18,7 @@ public class PlayerController : MonoBehaviour
     private float addSpeed;
 
     public ParticleSystem explosionParticleSystem;
+    public ParticleSystem diamondParticleSystem;
 
     Vector3 moveVector = Vector3.zero;
     Vector3 holdPosition = Vector3.zero;
@@ -43,6 +44,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         explosionParticleSystem = GameObject.Find("Particle System").GetComponent<ParticleSystem>();
+        diamondParticleSystem = GameObject.Find("Diamond Particle System").GetComponent<ParticleSystem>();
         m_Rigidbody = GetComponent<Rigidbody>();
 
         characterController = GetComponent<CharacterController>();
@@ -84,7 +86,7 @@ public class PlayerController : MonoBehaviour
             explosionParticleSystem.Play();
             ParticleSystem.EmissionModule em = explosionParticleSystem.emission;
             em.enabled = true;
-            UnityEngine.Debug.Log(explosionParticleSystem.name + " is playing " + explosionParticleSystem.isPlaying);
+            
             Destroy(other.gameObject);
             speed -= 1f;
 
@@ -101,6 +103,12 @@ public class PlayerController : MonoBehaviour
         }
         if (other.GetComponentInChildren<Transform>().tag == "Obstacle")
         {
+            
+            diamondParticleSystem.Play();
+            diamondParticleSystem.GetComponent<Renderer>().material.color = other.GetComponent<Renderer>().material.color;
+            ParticleSystem.EmissionModule em = diamondParticleSystem.emission;
+            em.enabled = true;
+
             Destroy(other.gameObject);
 
             if (GameObject.Find("Body").GetComponent<Renderer>().material.color == other.GetComponent<Renderer>().material.color)
@@ -118,6 +126,10 @@ public class PlayerController : MonoBehaviour
                     holdPosition = characterController.transform.position;
                     StartCoroutine(gameEnd());
                     audioData[2].Play(0);
+                }
+                else
+                {
+                    StartCoroutine(BlinkGameObject());
                 }
             }
         }
@@ -159,16 +171,6 @@ public class PlayerController : MonoBehaviour
         canMove = false;
         m_Rigidbody.constraints = RigidbodyConstraints.FreezeAll;
         yield return new WaitForSeconds(0.05f);
-    }
-
-    void HideObject()
-    {
-        characterController.transform.localScale = new Vector3(0f, 0f, 0f);
-    }
-
-    void ShowObject()
-    {
-        characterController.transform.localScale = new Vector3(1f, 1.5f, 1f);
     }
 
     public IEnumerator BlinkGameObject()

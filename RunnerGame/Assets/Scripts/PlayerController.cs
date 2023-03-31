@@ -11,6 +11,7 @@ using UnityEngine.SceneManagement;
 public class PlayerController : MonoBehaviour
 {
     public bool canMove = true;
+    public Animator animator;
     Rigidbody m_Rigidbody;
     public static float speed = 10f;
 
@@ -43,6 +44,7 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
+        animator = GetComponent<Animator>();
         explosionParticleSystem = GameObject.Find("Particle System").GetComponent<ParticleSystem>();
         diamondParticleSystem = GameObject.Find("Diamond Particle System").GetComponent<ParticleSystem>();
         m_Rigidbody = GetComponent<Rigidbody>();
@@ -71,6 +73,7 @@ public class PlayerController : MonoBehaviour
             if (characterController.isGrounded && (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.Space)))
             {
                 moveVector.y = jumpSpeed;
+                animator.Play("Jump");
             }
 
             moveVector.y -= gravity * Time.deltaTime;

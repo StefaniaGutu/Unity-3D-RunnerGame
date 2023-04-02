@@ -2863,6 +2863,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canMove: 1
   animator: {fileID: 1264781520}
+  face: {fileID: 2100000, guid: f9a76af6b88ff4e41bbe20cd3d156bcb, type: 2}
   prev_speed: 0
   explosionParticleSystem: {fileID: 2876408278387195348, guid: ab08306a5e99291469c554fe93c45a0a, type: 3}
   diamondParticleSystem: {fileID: 2358235079647356693, guid: 23d630ef1cfb62b409b793a563c496ed, type: 3}

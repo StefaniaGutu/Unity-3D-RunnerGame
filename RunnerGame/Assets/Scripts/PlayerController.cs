@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Collections.Specialized;
@@ -14,6 +15,7 @@ public class PlayerController : MonoBehaviour
     public Animator animator;
     Rigidbody m_Rigidbody;
     public static float speed = 10f;
+    public Material face;
 
     public float prev_speed;
     private float addSpeed;
@@ -89,7 +91,7 @@ public class PlayerController : MonoBehaviour
             explosionParticleSystem.Play();
             ParticleSystem.EmissionModule em = explosionParticleSystem.emission;
             em.enabled = true;
-            
+            animator.Play("");
             Destroy(other.gameObject);
             speed -= 1f;
 
@@ -178,6 +180,12 @@ public class PlayerController : MonoBehaviour
 
     public IEnumerator BlinkGameObject()
     {
+        var initialFace = GameObject.Find("Body").GetComponent<Renderer>().materials[1];
+        var mats = GameObject.Find("Body").GetComponent<Renderer>().materials;
+        mats[1] = face;
+        GameObject.Find("Body").GetComponent<Renderer>().materials = mats;
+        transform.rotation = new Quaternion(0, 180f, 0, 0);
+
         var mesh = GameObject.Find("Body").GetComponent<SkinnedMeshRenderer>();
         var mesh2 = GameObject.Find("Crown").GetComponent<MeshRenderer>();
 
@@ -191,5 +199,10 @@ public class PlayerController : MonoBehaviour
             mesh2.enabled = true;
             yield return new WaitForSeconds(0.2f);
         }
+
+        transform.rotation = new Quaternion(0, 0, 0, 0);
+        mats = GameObject.Find("Body").GetComponent<Renderer>().materials;
+        mats[1] = initialFace;
+        GameObject.Find("Body").GetComponent<Renderer>().materials = mats;
     }
 }

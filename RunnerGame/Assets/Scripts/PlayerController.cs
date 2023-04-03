@@ -5,6 +5,7 @@ using System.Collections.Specialized;
 using System.Diagnostics;
 using System.Security.Cryptography;
 using System.Threading;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -16,6 +17,9 @@ public class PlayerController : MonoBehaviour
     Rigidbody m_Rigidbody;
     public static float speed = 10f;
     public Material face;
+    public GameObject textObject;
+    private Animation textAnimation;
+    private TextMeshPro textMeshProComponent;
 
     public float prev_speed;
     private float addSpeed;
@@ -119,6 +123,7 @@ public class PlayerController : MonoBehaviour
             if (GameObject.Find("Body").GetComponent<Renderer>().material.color == other.GetComponent<Renderer>().material.color)
             {
                 audioData[1].Play(0);
+                PlayTextAnimation(2);
                 ScoreManager.instance.AddPoints(2);
             }
                 
@@ -142,7 +147,9 @@ public class PlayerController : MonoBehaviour
         {
             audioData[0].Play(0);
 
+            PlayTextAnimation(1);
             ScoreManager.instance.AddPoints(1);
+            
 
             coinGet += 2;
             if (max_coin < coinGet)
@@ -204,5 +211,13 @@ public class PlayerController : MonoBehaviour
         mats = GameObject.Find("Body").GetComponent<Renderer>().materials;
         mats[1] = initialFace;
         GameObject.Find("Body").GetComponent<Renderer>().materials = mats;
+    }
+
+    void PlayTextAnimation(int points)
+    {
+        textMeshProComponent = textObject.GetComponent<TextMeshPro>();
+        textMeshProComponent.text = "+" + points.ToString();
+        textAnimation = textObject.GetComponent<Animation>();
+        textAnimation.Play();
     }
 }

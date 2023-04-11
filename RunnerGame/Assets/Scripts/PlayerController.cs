@@ -47,6 +47,8 @@ public class PlayerController : MonoBehaviour
     public AudioClip DiamondSound;
 
     public GameObject player; 
+    public SwitchAI switchAI;
+    private GameObject closestObject;
 
     void Start()
     {
@@ -73,18 +75,25 @@ public class PlayerController : MonoBehaviour
     {
         if (canMove)
         {
-            moveVector.x = Input.GetAxis("Horizontal") * 4f;
-            moveVector.z = 0;
-
-            if (characterController.isGrounded && (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.Space)))
+            if (switchAI.isAIControlled)
             {
-                moveVector.y = jumpSpeed;
-                animator.Play("Jump");
+                UpdateDecisionTree();
             }
+            else
+            {
+                moveVector.x = Input.GetAxis("Horizontal") * 4f;
+                moveVector.z = 0;
 
-            moveVector.y -= gravity * Time.deltaTime;
+                if (characterController.isGrounded && (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.Space)))
+                {
+                    moveVector.y = jumpSpeed;
+                    animator.Play("Jump");
+                }
 
-            characterController.Move(moveVector * Time.deltaTime);
+                moveVector.y -= gravity * Time.deltaTime;
+
+                characterController.Move(moveVector * Time.deltaTime);
+            }
         }
     }
 
@@ -219,5 +228,41 @@ public class PlayerController : MonoBehaviour
         textMeshProComponent.text = "+" + points.ToString();
         textAnimation = textObject.GetComponent<Animation>();
         textAnimation.Play();
+    }
+
+    void UpdateDecisionTree()
+    {
+        List<GameObject> obstacles = new List<GameObject>(GameObject.FindGameObjectsWithTag("JumpObstacle"));
+        obstacles.AddRange(GameObject.FindGameObjectsWithTag("Obstacle"));
+        obstacles.AddRange(GameObject.FindGameObjectsWithTag("cointag"));
+
+        float minDistance = float.MaxValue;
+
+        foreach (GameObject obstacle in obstacles)
+        {
+            float distance = obstacle.transform.position.z - transform.position.z;
+            if (distance > 0 && distance < minDistance)
+            {
+                minDistance = distance;
+                closestObject = obstacle;
+            }
+        }
+
+        moveVector.x = Input.GetAxis("Horizontal") * 4f;
+        moveVector.z = 0;
+
+        if (closestObject != null && closestObject.transform.position.z - transform.position.z < 4)
+        {
+            if (closestObject.tag == "JumpObstacle" || closestObject.tag == "Obstacle")
+            {
+                moveVector.y = jumpSpeed - 2;
+                animator.Play("Jump");
+            }
+        }
+
+        moveVector.y -= gravity * Time.deltaTime;
+
+        characterController.Move(moveVector * Time.deltaTime);
+
     }
 }

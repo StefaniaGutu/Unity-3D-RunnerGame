@@ -47,6 +47,11 @@ public class PlayerController : MonoBehaviour
     public AudioClip DiamondSound;
 
     public GameObject player; 
+    public SwitchAI switchAI;
+
+    private GameObject closestJumpObstacle;
+    private GameObject closestCoin;
+    private GameObject closestDiamond;
 
     void Start()
     {
@@ -73,18 +78,25 @@ public class PlayerController : MonoBehaviour
     {
         if (canMove)
         {
-            moveVector.x = Input.GetAxis("Horizontal") * 4f;
-            moveVector.z = 0;
-
-            if (characterController.isGrounded && (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.Space)))
+            if (switchAI.isAIControlled)
             {
-                moveVector.y = jumpSpeed;
-                animator.Play("Jump");
+                UpdateDecisionTree();
             }
+            else
+            {
+                moveVector.x = Input.GetAxis("Horizontal") * 4f;
+                moveVector.z = 0;
 
-            moveVector.y -= gravity * Time.deltaTime;
+                if (characterController.isGrounded && (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.Space)))
+                {
+                    moveVector.y = jumpSpeed;
+                    animator.Play("Jump");
+                }
 
-            characterController.Move(moveVector * Time.deltaTime);
+                moveVector.y -= gravity * Time.deltaTime;
+
+                characterController.Move(moveVector * Time.deltaTime);
+            }
         }
     }
 
@@ -219,5 +231,89 @@ public class PlayerController : MonoBehaviour
         textMeshProComponent.text = "+" + points.ToString();
         textAnimation = textObject.GetComponent<Animation>();
         textAnimation.Play();
+    }
+
+    void UpdateDecisionTree()
+    {
+        // all the obstacles and coins
+        List<GameObject> obstacles = new List<GameObject>(GameObject.FindGameObjectsWithTag("JumpObstacle"));
+        List<GameObject> coins = new List<GameObject>(GameObject.FindGameObjectsWithTag("cointag"));
+        List<GameObject> diamonds = new List<GameObject>(GameObject.FindGameObjectsWithTag("Obstacle"));
+
+        closestCoin = null;
+        closestDiamond = null;
+        closestJumpObstacle= null;
+
+        float minDistance = float.MaxValue;
+        float secondMinDistance = float.MaxValue;
+        float thirdMinDistance = float.MaxValue;
+
+        // find the closest object
+        foreach (GameObject obstacle in obstacles)
+        {
+            float distance = obstacle.transform.position.z - transform.position.z;
+            if (distance > 0 && distance < minDistance)
+            {
+                minDistance = distance;
+                closestJumpObstacle = obstacle;
+            }
+        }
+
+        foreach (GameObject coin in coins)
+        {
+            float distance = coin.transform.position.z - transform.position.z;
+            if (distance > 0 && distance < secondMinDistance)
+            {
+                secondMinDistance = distance;
+                closestCoin = coin;
+            }
+        }
+
+        foreach (GameObject diamond in diamonds)
+        {
+            float distance = diamond.transform.position.z - transform.position.z;
+            if (distance > 0 && distance < thirdMinDistance)
+            {
+                thirdMinDistance = distance;
+                closestDiamond = diamond;
+            }
+        }
+
+        moveVector.z = 0;
+
+        // move player based on type of obstacle and distance
+        if (closestJumpObstacle != null && closestJumpObstacle.transform.position.z - transform.position.z < 3 && characterController.isGrounded)
+        {
+            moveVector.y = jumpSpeed;
+            animator.Play("Jump");
+        }
+        else if (closestDiamond != null)
+        {
+            Transform parentTransform = closestDiamond.transform;
+            var position = transform.position.x;
+            for (int i = 0; i < parentTransform.childCount; i++)
+            {
+                Transform childTransform = parentTransform.GetChild(i);
+                GameObject child = childTransform.gameObject;
+                if (GameObject.Find("Body").GetComponent<Renderer>().material.color == child.GetComponent<Renderer>().material.color)
+                {
+                    moveVector.x = child.transform.position.x * 3f;
+                    position = child.transform.position.x;
+                }
+            }
+            if (closestDiamond.transform.position.z - transform.position.z < 4 && characterController.isGrounded && Mathf.Abs(transform.position.x - position) > 0.3)
+            {
+                moveVector.y = jumpSpeed;
+                animator.Play("Jump");
+            }
+        }
+        else if (closestCoin != null && closestCoin.transform.position.z - transform.position.z < 10)
+        {
+            moveVector.x = closestCoin.transform.position.x;
+        }
+
+        moveVector.y -= gravity * Time.deltaTime;
+
+        characterController.Move(moveVector * Time.deltaTime);
     }
 }

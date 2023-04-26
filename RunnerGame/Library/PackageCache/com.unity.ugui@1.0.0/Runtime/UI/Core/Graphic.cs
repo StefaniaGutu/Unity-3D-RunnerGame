@@ -157,8 +157,6 @@ namespace UnityEngine.UI
 
         [SerializeField] private bool m_RaycastTarget = true;
 
-        private bool m_RaycastTargetCache = true;
-
         /// <summary>
         /// Should this graphic be considered a target for raycasting?
         /// </summary>
@@ -180,7 +178,6 @@ namespace UnityEngine.UI
                     if (m_RaycastTarget && isActiveAndEnabled)
                         GraphicRegistry.RegisterRaycastGraphicForCanvas(canvas, this);
                 }
-                m_RaycastTargetCache = value;
             }
         }
 
@@ -264,7 +261,6 @@ namespace UnityEngine.UI
             }
 
             SetVerticesDirty();
-            SetRaycastDirty();
         }
 
         /// <summary>
@@ -318,19 +314,6 @@ namespace UnityEngine.UI
 
             if (m_OnDirtyMaterialCallback != null)
                 m_OnDirtyMaterialCallback();
-        }
-
-        public void SetRaycastDirty()
-        {
-            if (m_RaycastTargetCache != m_RaycastTarget)
-            {
-                if (m_RaycastTarget && isActiveAndEnabled)
-                    GraphicRegistry.RegisterRaycastGraphicForCanvas(canvas, this);
-
-                else if (!m_RaycastTarget)
-                    GraphicRegistry.UnregisterRaycastGraphicForCanvas(canvas, this);
-            }
-            m_RaycastTargetCache = m_RaycastTarget;
         }
 
         protected override void OnRectTransformDimensionsChange()
@@ -506,13 +489,13 @@ namespace UnityEngine.UI
         {
             get
             {
-                var components = ListPool<IMaterialModifier>.Get();
-                GetComponents<IMaterialModifier>(components);
+                var components = ListPool<Component>.Get();
+                GetComponents(typeof(IMaterialModifier), components);
 
                 var currentMat = material;
                 for (var i = 0; i < components.Count; i++)
                     currentMat = (components[i] as IMaterialModifier).GetModifiedMaterial(currentMat);
-                ListPool<IMaterialModifier>.Release(components);
+                ListPool<Component>.Release(components);
                 return currentMat;
             }
         }
@@ -745,6 +728,7 @@ namespace UnityEngine.UI
                 {
                     s_Mesh = new Mesh();
                     s_Mesh.name = "Shared UI Mesh";
+                    s_Mesh.hideFlags = HideFlags.HideAndDontSave;
                 }
                 return s_Mesh;
             }

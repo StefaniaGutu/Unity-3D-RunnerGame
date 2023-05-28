@@ -24,6 +24,8 @@ The player can switch to AI mode if it presses the I key and also it can switch 
 - Bloom
 - Depth of Field
 - Lens Distorsion
+- Color Adjustments
+- Tonemapping
 
 #### Artificial Intelligence
 - Decision Tree for player movement when switching to AI mode
